@@ -50,6 +50,8 @@
     const search = form.querySelector("[name=q]");
     const type = form.querySelector("[name=type]");
     const status = form.querySelector("[name=status]");
+    const selectFields = [type, status].filter(Boolean);
+    const fields = [search, ...selectFields];
     const count = collection.querySelector("[data-result-count]");
     const empty = collection.querySelector("[data-no-results]");
     const isEvents = collection.dataset.collection === "events";
@@ -72,13 +74,15 @@
       }
     });
     // Rebuild the status options after refreshing expired entries.
-    status.replaceChildren(new Option("All statuses", ""));
-    [...new Set(entries.map(entry => entry.dataset.status).filter(Boolean))]
-      .sort().forEach(value => status.add(new Option(value, value)));
+    if (status) {
+      status.replaceChildren(new Option("All statuses", ""));
+      [...new Set(entries.map(entry => entry.dataset.status).filter(Boolean))]
+        .sort().forEach(value => status.add(new Option(value, value)));
+    }
 
     const params = new URLSearchParams(window.location.search);
     search.value = params.get("q") || "";
-    for (const field of [type, status]) {
+    for (const field of selectFields) {
       const value = params.get(field.name);
       if (value && Array.from(field.options).some(option => option.value === value)) field.value = value;
     }
@@ -88,7 +92,7 @@
       entries.forEach(entry => {
         const matches = words.every(word => entry.dataset.search.includes(word))
           && (!type.value || entry.dataset.type === type.value)
-          && (!status.value || entry.dataset.status === status.value);
+          && (!status || !status.value || entry.dataset.status === status.value);
         entry.hidden = !matches;
         if (matches) visible += 1;
       });
@@ -96,21 +100,19 @@
       empty.hidden = visible !== 0;
       if (updateURL) {
         const next = new URL(window.location.href);
-        for (const field of [search, type, status]) {
+        for (const field of fields) {
           if (field.value) next.searchParams.set(field.name, field.value);
           else next.searchParams.delete(field.name);
         }
+        if (!status) next.searchParams.delete("status");
         window.history.replaceState(null, "", next);
       }
     };
     form.addEventListener("submit", event => event.preventDefault());
     search.addEventListener("input", () => applyFilters());
-    type.addEventListener("change", () => applyFilters());
-    status.addEventListener("change", () => applyFilters());
+    selectFields.forEach(field => field.addEventListener("change", () => applyFilters()));
     form.addEventListener("reset", () => {
-      search.value = "";
-      type.value = "";
-      status.value = "";
+      fields.forEach(field => { field.value = ""; });
       applyFilters();
     });
     collection.querySelector("[data-clear-filters]").addEventListener("click", () => {
@@ -118,6 +120,6 @@
       search.focus();
     });
     form.hidden = false;
-    applyFilters(false);
+    applyFilters(!status && params.has("status"));
   });
 })();

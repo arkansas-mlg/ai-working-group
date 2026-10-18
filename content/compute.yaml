@@ -1,43 +1,12 @@
-# Illustrative entries only. No allocation or credit program is being offered.
-# Add verified program links and terms when replacing these examples.
-- id: shared-gpu-access
-  title: Shared GPU research access
-  provider: Illustrative campus resource
+- id: uark-ahpcc
+  title: Arkansas High Performance Computing Center (AHPCC)
+  provider: University of Arkansas
   type: Campus computing
-  summary: An example listing for shared computing that could support model development, small experiments, and reproducible research.
-  eligibility: Example eligibility would cover faculty-led research teams and their students.
-  access: A real listing will identify the resource owner and the allocation request process.
-  status: Rolling
-  sample: true
+  summary: High-performance computing, storage, technical support, and training for computational and data-intensive research.
+  eligibility: Faculty, staff, and students at Arkansas public universities, and their collaborators.
+  access: Request a user account through the AHPCC website.
+  url: https://hpc.uark.edu/
+  link_label: Visit AHPCC
   tags:
-    - GPUs
-    - Model development
-  details:
-    - Record available hardware and software environments.
-    - Explain allocation limits and expected wait times.
-- id: cloud-research-credits
-  title: Cloud credits for a pilot study
-  provider: Illustrative cloud program
-  type: Cloud credits
-  summary: An example of a time-limited credit opportunity for testing an idea before committing to a larger research project.
-  eligibility: Example eligibility would depend on the provider and the proposed research use.
-  access: A real listing will link to the application and explain credit expiration and covered services.
-  deadline: "2026-12-15"
-  status: Open
-  sample: true
-  tags:
-    - Cloud computing
-    - Pilot research
-- id: simulation-allocation
-  title: Computing allocation for simulation studies
-  provider: Illustrative research allocation program
-  type: Research allocation
-  summary: An example of an archived allocation call for computational experiments and engineering simulations.
-  eligibility: Example eligibility would require a research plan and an estimate of computing needs.
-  access: A real listing will document the allocation cycle and where to find the next call.
-  deadline: "2026-09-30"
-  status: Closed
-  sample: true
-  tags:
-    - Simulation
+    - High-performance computing
     - Scientific computing

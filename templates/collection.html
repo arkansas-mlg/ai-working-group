@@ -11,7 +11,7 @@
   <form class="filter-bar" role="search" data-filters hidden>
     <div class="filter-field filter-search"><label for="search">Search {{ 'activities' if page == 'events' else 'listings' }}</label><input id="search" type="search" name="q" placeholder="Search by topic, keyword, or name…" autocomplete="off"></div>
     <div class="filter-field"><label for="type">Type</label><select id="type" name="type"><option value="">All types</option>{% for type in types %}<option value="{{ type }}">{{ type }}</option>{% endfor %}</select></div>
-    <div class="filter-field"><label for="status">Status</label><select id="status" name="status"><option value="">All statuses</option>{% for status in statuses %}<option value="{{ status }}">{{ status }}</option>{% endfor %}</select></div>
+    {% if page == 'funding' %}<div class="filter-field"><label for="status">Status</label><select id="status" name="status"><option value="">All statuses</option>{% for status in statuses %}<option value="{{ status }}">{{ status }}</option>{% endfor %}</select></div>{% endif %}
     <button class="filter-reset" type="reset">Reset filters</button>
   </form>
   <p class="filter-summary" data-result-count role="status" aria-live="polite">{{ entries | length }} {{ 'activities' if page == 'events' else 'listings' }}</p>

@@ -68,7 +68,7 @@ Add `url` for a profile or opportunity link. Schedule, compute, and funding list
 
 Quote dates as `"YYYY-MM-DD"`. Omit a date or deadline when it is not confirmed. Events with past dates and opportunities with past deadlines are marked past or closed when the site is rebuilt. Collection pages also refresh these statuses in the browser between builds, using the group's America/Chicago time zone. Use `[]` or a blank file for an empty collection; its page remains available without entries. Text is rendered as plain content rather than raw HTML.
 
-The initial activities and opportunities are illustrative and marked internally with `sample: true`, which produces no visible notices or labels. Replace or remove them as real content becomes available. To build a version that omits all samples:
+Illustrative entries are marked internally with `sample: true`, which produces no visible notices or labels. Replace or remove them as real content becomes available. To build a version that omits all samples:
 
 ```sh
 python scripts/build.py --exclude-samples
