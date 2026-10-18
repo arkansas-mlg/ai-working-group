@@ -15,7 +15,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 
 ROOT = Path(__file__).resolve().parent.parent
-COLLECTIONS = ("people", "events", "compute", "funding", "resources", "projects")
+COLLECTIONS = ("people", "events", "compute", "funding", "projects")
 ROUTES = {
     "home": ("", "home.html", "Home"),
     "about": ("about", "about.html", "About & goals"),
@@ -23,7 +23,6 @@ ROUTES = {
     "events": ("schedule", "collection.html", "Schedule"),
     "compute": ("compute", "collection.html", "Compute & credits"),
     "funding": ("funding", "collection.html", "Funding opportunities"),
-    "resources": ("resources", "collection.html", "Resources"),
 }
 
 
@@ -230,7 +229,7 @@ def main():
         result = build_site(args.content_dir, args.output, args.base_path, args.exclude_samples)
     except ContentError as exc:
         parser.exit(1, f"Content error: {exc}\n")
-    print(f"Built 7 pages + 404 in {result} (base path: {normalize_base_path(args.base_path) or '/'})")
+    print(f"Built {len(ROUTES)} pages + 404 in {result} (base path: {normalize_base_path(args.base_path) or '/'})")
 
 
 if __name__ == "__main__":

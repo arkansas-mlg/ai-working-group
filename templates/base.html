@@ -34,7 +34,10 @@
   {% endif %}
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div><a class="footer-brand" href="{{ url() }}">{{ site.name }}</a><p>{{ site.footer_note }}</p></div>
+      <div>
+        <a class="footer-brand" href="{{ url() }}">{{ site.name }}</a>
+        <p>{{ site.institution }} · {{ site.college }}</p>
+      </div>
       <div class="footer-links"><span>{{ site.location }}</span>{% if site.email %}<a href="mailto:{{ site.email }}">Contact the group <span aria-hidden="true">↗</span></a>{% endif %}<span>© {{ year }} {{ site.name }}</span></div>
     </div>
   </footer>

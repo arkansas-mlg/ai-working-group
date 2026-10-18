@@ -17,10 +17,7 @@ nav:
     path: compute/
   - label: Funding
     path: funding/
-  - label: Resources
-    path: resources/
 hero:
-  eyebrow: University of Arkansas · College of Engineering
   title: AI meets the
   emphasis: physical world.
   description: We bring researchers together across disciplines to explore physical AI and AI for physical systems—connecting ideas, people, and the resources to move research forward.
@@ -34,7 +31,6 @@ join:
   description: Faculty and students are welcome to share a research challenge, suggest an activity, or contribute a resource. Contact the group to get involved.
   label: Get in touch
   email: jungtaek.kim@uark.edu
-footer_note: Connecting AI research and engineering across the University of Arkansas.
 pages:
   people:
     eyebrow: Our people
@@ -60,12 +56,6 @@ pages:
     intro: Discover opportunities to develop collaborations, test research concepts, and support shared ambitions across disciplines.
     empty_title: Funding opportunities will appear here
     empty_description: We are collecting relevant calls and programs. Contact the group to share an opportunity or discuss a research concept.
-  resources:
-    eyebrow: Share what helps
-    title: A growing collection of research resources.
-    intro: Find learning materials, datasets, tools, and facilities contributed through the group's activities and collaborations.
-    empty_title: Our shared collection starts here
-    empty_description: Resources will appear as the group develops. Get in touch to contribute materials or describe a useful capability.
 home:
   themes_eyebrow: Two connected directions
   themes_title: Intelligence grounded in the physical world.

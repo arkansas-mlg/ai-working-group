@@ -3,8 +3,7 @@
 {% block content %}
 <section class="container hero" aria-labelledby="hero-title">
   <div class="hero-copy">
-    <p class="eyebrow">{{ site.hero.eyebrow }}</p>
-    <h1 id="hero-title">{{ site.hero.title }}<br><em>{{ site.hero.emphasis }}</em></h1>
+    <h1 id="hero-title">{{ site.hero.title }} <em>{{ site.hero.emphasis }}</em></h1>
     <p>{{ site.hero.description }}</p>
     <div class="hero-actions"><a class="button button-primary" href="{{ url(site.hero.primary_path) }}">{{ site.hero.primary_label }} <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="{{ url(site.hero.secondary_path) }}">{{ site.hero.secondary_label }} <span aria-hidden="true">→</span></a></div>
   </div>
