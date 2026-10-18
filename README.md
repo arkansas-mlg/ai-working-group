@@ -43,6 +43,8 @@ Edit files in `content/`, then rebuild. Most content changes do not require edit
 
 `site.yaml` and `about.yaml` contain mappings. The remaining files contain lists. Each list entry needs a unique `id` and a `title`; people use `name` instead of `title`. Other information is optional. Keep IDs stable when editing an existing item.
 
+Page headings are optional: omit `title` from `about.yaml` or a page under `site.yaml` → `pages` to hide its large heading. The browser tab still uses a default page name.
+
 An opportunity can start with a small entry:
 
 ```yaml

@@ -18,11 +18,11 @@ ROOT = Path(__file__).resolve().parent.parent
 COLLECTIONS = ("people", "events", "compute", "funding", "projects")
 ROUTES = {
     "home": ("", "home.html", "Home"),
-    "about": ("about", "about.html", "About & goals"),
+    "about": ("about", "about.html", "About"),
     "people": ("people", "people.html", "People"),
     "events": ("schedule", "collection.html", "Schedule"),
-    "compute": ("compute", "collection.html", "Compute & credits"),
-    "funding": ("funding", "collection.html", "Funding opportunities"),
+    "compute": ("compute", "collection.html", "Compute & Credits"),
+    "funding": ("funding", "collection.html", "Funding Opportunities"),
 }
 
 

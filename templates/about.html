@@ -1,7 +1,11 @@
 {% extends 'base.html' %}
 {% from 'macros.html' import tags, badges with context %}
 {% block content %}
-<header class="container page-header"><p class="eyebrow">{{ about.eyebrow }}</p><h1 class="page-title">{{ about.title }}</h1><p class="page-intro">{{ about.intro }}</p></header>
+<header class="container page-header">
+  <p class="eyebrow">{{ about.eyebrow }}</p>
+  {% if about.title %}<h1 class="page-title">{{ about.title }}</h1>{% endif %}
+  <p class="page-intro">{{ about.intro }}</p>
+</header>
 {% if about.themes %}
 <section class="section"><div class="container"><div class="section-heading"><h2>{{ about.themes_title }}</h2></div><div class="theme-grid">{% for theme in about.themes %}<article class="theme-block" id="{{ theme.id }}"><span class="theme-number">0{{ loop.index }}</span><div><h3>{{ theme.title }}</h3><p>{{ theme.description }}</p>{{ tags(theme.topics) }}</div></article>{% endfor %}</div></div></section>
 {% endif %}

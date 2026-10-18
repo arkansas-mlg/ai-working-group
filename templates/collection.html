@@ -1,7 +1,11 @@
 {% extends 'base.html' %}
 {% from 'macros.html' import collection_card with context %}
 {% block content %}
-<header class="container page-header"><p class="eyebrow">{{ page_meta.eyebrow }}</p><h1 class="page-title">{{ page_title }}</h1><p class="page-intro">{{ page_meta.intro }}</p></header>
+<header class="container page-header">
+  <p class="eyebrow">{{ page_meta.eyebrow }}</p>
+  {% if page_meta.title %}<h1 class="page-title">{{ page_meta.title }}</h1>{% endif %}
+  <p class="page-intro">{{ page_meta.intro }}</p>
+</header>
 <section class="container page-content collection-section" data-collection="{{ page }}" aria-label="{{ page_title }} listings">
   {% if entries %}
   <form class="filter-bar" role="search" data-filters hidden>
