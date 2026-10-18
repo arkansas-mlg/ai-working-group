@@ -44,7 +44,7 @@ ul, ol { padding-left: 1.35rem; }
 .site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--ink); }
 .site-nav a:hover::after, .site-nav a[aria-current="page"]::after { transform: scaleX(1); }
 .menu-toggle { display: none; padding: .45rem .7rem; border: 1px solid var(--line-strong); background: transparent; font-size: 13px; }
-.eyebrow, .section-kicker { display: block; margin-bottom: 1.4rem; color: var(--red); font-size: 10px; font-weight: 700; letter-spacing: .17em; line-height: 1.6; text-transform: uppercase; }
+.eyebrow, .section-kicker { display: block; margin-bottom: 1.4rem; color: var(--red); font-size: 12px; font-weight: 700; letter-spacing: .17em; line-height: 1.6; text-transform: uppercase; }
 .eyebrow::before { display: inline-block; width: 21px; margin-right: 10px; border-top: 1px solid currentColor; vertical-align: middle; content: ""; }
 
 /* Homepage */
@@ -118,7 +118,7 @@ ul, ol { padding-left: 1.35rem; }
 .join-inner h2 { margin-bottom: 8px; font-family: var(--serif); font-size: 33px; font-weight: 400; letter-spacing: -.025em; }
 .join-inner p { margin-bottom: 0; color: var(--muted); font-size: 13px; }
 .join-inner .eyebrow, .join-inner .section-kicker { color: var(--red); }
-.join-inner .eyebrow { margin-bottom: 11px; font-size: 9px; }
+.join-inner .eyebrow { margin-bottom: 11px; font-size: 11px; }
 .join-inner .button { flex-shrink: 0; border-color: var(--red); color: var(--red); }
 .join-inner .button:hover { text-decoration: underline; }
 .site-footer { border-top: 1px solid var(--line); }
@@ -131,7 +131,7 @@ ul, ol { padding-left: 1.35rem; }
 .footer-links a:hover { text-decoration: underline; }
 
 /* Shared content pages and YAML collection views. */
-.page-header { padding-block: 49px 42px; border-bottom: 1px solid var(--line); }
+.page-header { padding-block: 49px 42px; }
 .breadcrumb { display: flex; flex-wrap: wrap; gap: 11px; margin-bottom: 33px; color: var(--muted); font-size: 10px; }
 .breadcrumb a { text-decoration: none; }
 .page-header .eyebrow { margin-bottom: 15px; }
@@ -179,7 +179,7 @@ ul, ol { padding-left: 1.35rem; }
 .empty-state h2, .empty-state h3 { margin-bottom: 12px; font-family: var(--serif); font-size: 28px; font-weight: 400; letter-spacing: -.025em; }
 .empty-state p { margin: 0; color: var(--muted); font-size: 13px; }
 .empty-state .button, .empty-state .text-link { margin-top: 22px; }
-.empty-state .eyebrow { margin-bottom: 15px; color: var(--red); font-size: 10px; }
+.empty-state .eyebrow { margin-bottom: 15px; color: var(--red); font-size: 12px; }
 .collection-section + .collection-section { margin-top: 55px; padding-top: 35px; border-top: 1px solid var(--line); }
 .collection-section > h2 { margin-bottom: 25px; font-family: var(--serif); font-size: 31px; font-weight: 400; letter-spacing: -.025em; }
 .goal-grid { gap: 32px; }
@@ -244,7 +244,7 @@ ul, ol { padding-left: 1.35rem; }
   html.js .site-nav.is-open { display: flex; }
   .hero { padding-block: 45px 35px; }
   .hero h1 { font-size: clamp(43px, 10.2vw, 60px); }
-  .eyebrow { margin-bottom: 21px; font-size: 9px; }
+  .eyebrow { margin-bottom: 21px; font-size: 11px; }
   .hero-copy > p { margin-bottom: 22px; font-size: 14px; }
   .hero-actions { margin-top: 23px; gap: 11px; }
   .button { min-height: 46px; padding: 12px 17px; font-size: 12px; }
