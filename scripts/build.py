@@ -15,7 +15,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 
 ROOT = Path(__file__).resolve().parent.parent
-COLLECTIONS = ("people", "events", "compute", "funding", "projects")
+COLLECTIONS = ("people", "events", "compute", "funding")
 ROUTES = {
     "home": ("", "home.html", "Home"),
     "about": ("about", "about.html", "About"),

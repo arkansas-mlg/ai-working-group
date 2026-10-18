@@ -1,6 +1,6 @@
 # AI Working Group
 
-A YAML-driven website for the University of Arkansas College of Engineering AI Working Group. It introduces the group and its three founding PIs, with room for a growing schedule, compute and credit opportunities, funding, and research concepts.
+A YAML-driven website for the University of Arkansas College of Engineering AI Working Group. It introduces the group and its three founding PIs, with room for a growing schedule, compute and credit opportunities, and funding.
 
 The site is generated with Python, Jinja2, and PyYAML. The output is ordinary HTML, CSS, and JavaScript suitable for GitHub Pages. There is no database or backend service.
 
@@ -39,7 +39,6 @@ Edit files in `content/`, then rebuild. Most content changes do not require edit
 | `events.yaml` | Upcoming, planned, and past activities |
 | `compute.yaml` | Computing access and credit opportunities |
 | `funding.yaml` | Funding opportunities |
-| `projects.yaml` | Research concepts and collaboration ideas |
 
 `site.yaml` and `about.yaml` contain mappings. The remaining files contain lists. Each list entry needs a unique `id` and a `title`; people use `name` instead of `title`. Other information is optional. Keep IDs stable when editing an existing item.
 
@@ -64,13 +63,12 @@ Additional fields used by the initial content include:
 - **People:** `role`, `department`, `email`, `bio`, `interests`, and `initials`.
 - **Events:** `type`, `summary`, `date`, `time`, `location`, `status`, and `tags`.
 - **Compute and funding:** `provider`, `type`, `summary`, `eligibility`, `deadline`, `status`, and `tags`. Compute can include `access` and `details`; funding can include `amount`.
-- **Projects:** `summary`, `type`, `status`, and `tags`.
 
-Add `url` for a profile, project, or opportunity link. Schedule, compute, and funding listings can use `link_label` for its display text and `last_checked` to show when the listing was verified. Supported links are HTTPS, HTTP, email, and local site paths.
+Add `url` for a profile or opportunity link. Schedule, compute, and funding listings can use `link_label` for its display text and `last_checked` to show when the listing was verified. Supported links are HTTPS, HTTP, email, and local site paths.
 
 Quote dates as `"YYYY-MM-DD"`. Omit a date or deadline when it is not confirmed. Events with past dates and opportunities with past deadlines are marked past or closed when the site is rebuilt. Collection pages also refresh these statuses in the browser between builds, using the group's America/Chicago time zone. Use `[]` or a blank file for an empty collection; its page remains available without entries. Text is rendered as plain content rather than raw HTML.
 
-The initial activities, opportunities, and research concepts are illustrative and marked internally with `sample: true`, which produces no visible notices or labels. Replace or remove them as real content becomes available. To build a version that omits all samples:
+The initial activities and opportunities are illustrative and marked internally with `sample: true`, which produces no visible notices or labels. Replace or remove them as real content becomes available. To build a version that omits all samples:
 
 ```sh
 python scripts/build.py --exclude-samples

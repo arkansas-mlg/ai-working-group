@@ -13,7 +13,7 @@ from scripts.build import build_site
 
 
 ROOT = Path(__file__).resolve().parents[1]
-COLLECTIONS = ("people", "events", "compute", "funding", "projects")
+COLLECTIONS = ("people", "events", "compute", "funding")
 ROUTES = (
     "index.html",
     "about/index.html",

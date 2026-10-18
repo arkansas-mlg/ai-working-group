@@ -27,9 +27,6 @@ goals:
   - id: external-proposals
     title: Develop research proposals
     description: Turn shared questions into collaborative concepts, match them with funding opportunities, and prepare competitive proposals.
-  - id: shared-infrastructure
-    title: Share research resources
-    description: Connect expertise, datasets, models, computing, and facilities, then identify infrastructure needs for future investment.
 milestones:
   - period: October–December 2026
     title: Meet, map, and frame
@@ -43,14 +40,9 @@ milestones:
     title: Prepare the next step
     description: Hold a second concept-development workshop, review proposals, and prepare an infrastructure roadmap and at least one submission-ready external proposal.
     status: Planned
-project_intro: Collaborations will grow from shared research questions. This space will collect project ideas, research challenges, and outcomes as teams take shape.
 themes_title: Two connected research directions
 goals_eyebrow: What we work toward
 goals_title: Our goals
 roadmap_eyebrow: The first chapter
 roadmap_title: A shared roadmap
 roadmap_intro: Proposed milestones for the 2026–27 working group. Activity dates will be added to the schedule as they are confirmed.
-projects_eyebrow: Questions worth sharing
-projects_title: Ideas & collaborations
-projects_empty_title: Room for the next idea
-projects_empty_description: Research questions and collaborations will appear here as teams take shape.
