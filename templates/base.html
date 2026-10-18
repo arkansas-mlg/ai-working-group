@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ page_meta.intro if page_meta is defined and page_meta.intro else site.description }}">
+  <meta name="theme-color" content="#9d2235">
+  <title>{% if page != 'home' %}{{ page_title }} · {% endif %}{{ site.name }}</title>
+  <link rel="icon" href="{{ url('assets/favicon.svg') }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ url('assets/styles.css') }}">
+  <script src="{{ url('assets/site.js') }}" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="{{ url() }}" aria-label="{{ site.name }} home">
+        <span class="brand-mark" aria-hidden="true">AI</span>
+        <span class="brand-copy"><strong>{{ site.name }}</strong><span>{{ site.institution }}</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">Menu <span aria-hidden="true">☰</span></button>
+      <nav class="site-nav" id="main-navigation" aria-label="Main navigation">
+        {% for item in site.nav %}<a href="{{ url(item.path) }}"{% if route and item.path.strip('/') == route %} aria-current="page"{% endif %}>{{ item.label }}</a>{% endfor %}
+      </nav>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">{% block content %}{% endblock %}</main>
+  {% if site.join %}
+  <aside class="join-band" aria-labelledby="join-title">
+    <div class="container join-inner">
+      <div><p class="eyebrow">{{ site.join.eyebrow }}</p><h2 id="join-title">{{ site.join.title }}</h2><p>{{ site.join.description }}</p></div>
+      {% if site.join.email %}<a class="button" href="mailto:{{ site.join.email }}">{{ site.join.label }} <span aria-hidden="true">↗</span></a>{% endif %}
+    </div>
+  </aside>
+  {% endif %}
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><a class="footer-brand" href="{{ url() }}">{{ site.name }}</a><p>{{ site.footer_note }}</p></div>
+      <div class="footer-links"><span>{{ site.location }}</span>{% if site.email %}<a href="mailto:{{ site.email }}">Contact the group <span aria-hidden="true">↗</span></a>{% endif %}<span>© {{ year }} {{ site.name }}</span></div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+{% macro badges(item) -%}
+  {% if item.sample %}<span class="badge badge-sample">Sample</span>{% endif %}
+  {% if item.status %}<span class="badge badge-status{% if item.status in ['Closed', 'Past'] %} badge-closed{% endif %}" data-status-label>{{ item.status }}</span>{% endif %}
+{%- endmacro %}
+
+{% macro tags(items) -%}
+  {% if items %}<ul class="tag-list" aria-label="Topics">{% for tag in items %}<li class="tag">{{ tag }}</li>{% endfor %}</ul>{% endif %}
+{%- endmacro %}
+
+{% macro sample_note(site) -%}
+  <p class="sample-note"><span class="badge badge-sample">Sample</span> {{ site.sample_notice | default('Entries marked Sample are illustrative and are not announcements of actual events or opportunities.') }}</p>
+{%- endmacro %}
+
+{% macro date_tile(item) -%}
+  <div class="date-tile" aria-hidden="true">{% if item.date %}<span class="date-month">{{ item.date | date_label('month') }}</span><span class="date-day">{{ item.date | date_label('day') }}</span>{% else %}<span class="date-tba">TBA</span>{% endif %}</div>
+{%- endmacro %}
+
+{% macro person_card(person, compact=false) -%}
+  <article class="person-card" id="{{ person.id }}">
+    <div class="person-initials" aria-hidden="true">{{ person.initials | default(person.name[0]) }}</div>
+    <p class="person-role">{{ person.role }}</p>
+    <h3>{{ person.name }}</h3>
+    {% if person.department %}<p class="person-department">{{ person.department }}</p>{% endif %}
+    {% if not compact and person.bio %}<p class="person-bio">{{ person.bio }}</p>{% endif %}
+    {{ tags(person.interests) }}
+    <div class="person-links">{% if person.email %}<a href="mailto:{{ person.email }}">Email {{ person.name.split()[0] }} <span aria-hidden="true">↗</span></a>{% endif %}{% if person.url %}<a href="{{ url(person.url) }}">Profile <span aria-hidden="true">↗</span></a>{% endif %}</div>
+  </article>
+{%- endmacro %}
+
+{% macro collection_card(item, kind) -%}
+  <article class="item-card" id="{{ item.id }}" data-entry data-type="{{ item.type | default('') }}" data-status="{{ item.status | default('') }}" data-date="{{ item.date | default('') }}" data-deadline="{{ item.deadline | default('') }}" data-search="{{ [item.title, item.get('summary', ''), item.get('provider', ''), item.get('eligibility', ''), item.get('tags', []) | join(' ')] | join(' ') | lower }}">
+    <div class="item-meta"><span>{{ item.type | default('Research resource') }}</span><span>{{ badges(item) }}</span></div>
+    {% if kind == 'events' %}
+    <div class="event-card-heading">{{ date_tile(item) }}<h2 class="item-title">{{ item.title }}</h2></div>
+    {% else %}<h2 class="item-title">{{ item.title }}</h2>{% endif %}
+    {% if item.provider %}<p class="item-provider">{{ item.provider }}</p>{% endif %}
+    {% if item.summary %}<p class="item-summary">{{ item.summary }}</p>{% endif %}
+    {% if item.date or item.time or item.location or item.eligibility or item.access or item.amount or item.deadline or item.last_checked %}
+    <dl class="item-details">
+      {% if kind == 'events' %}<div><dt>Date</dt><dd>{% if item.date %}<time datetime="{{ item.date }}">{{ item.date | date_label }}</time>{% else %}To be announced{% endif %}</dd></div>{% endif %}
+      {% if item.time %}<div><dt>Time</dt><dd>{{ item.time }}</dd></div>{% endif %}
+      {% if item.location %}<div><dt>Location</dt><dd>{{ item.location }}</dd></div>{% endif %}
+      {% if item.amount %}<div><dt>Support</dt><dd>{{ item.amount }}</dd></div>{% endif %}
+      {% if item.eligibility %}<div><dt>Eligibility</dt><dd>{{ item.eligibility }}</dd></div>{% endif %}
+      {% if item.access %}<div><dt>Access</dt><dd>{{ item.access }}</dd></div>{% endif %}
+      {% if item.deadline %}<div><dt>Deadline</dt><dd><time datetime="{{ item.deadline }}">{{ item.deadline | date_label }}</time></dd></div>{% endif %}
+      {% if item.last_checked %}<div><dt>Last checked</dt><dd><time datetime="{{ item.last_checked }}">{{ item.last_checked | date_label }}</time></dd></div>{% endif %}
+    </dl>
+    {% endif %}
+    {% if item.details %}<ul class="detail-list">{% for detail in item.details %}<li>{{ detail }}</li>{% endfor %}</ul>{% endif %}
+    <div class="item-footer">{{ tags(item.tags) }}{% if item.url %}<a class="card-link" href="{{ url(item.url) }}">{{ item.link_label | default('View details') }} <span aria-hidden="true">↗</span></a>{% endif %}</div>
+  </article>
+{%- endmacro %}

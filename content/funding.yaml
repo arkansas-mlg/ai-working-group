@@ -1,0 +1,39 @@
+# Illustrative entries only. These are not active calls from real sponsors.
+- id: interdisciplinary-seed-funding
+  title: Interdisciplinary research seed award
+  provider: Illustrative university program
+  type: Seed funding
+  summary: An example opportunity for teams developing a shared research question, collecting preliminary evidence, and preparing an external proposal.
+  eligibility: Example eligibility would require collaborators from more than one discipline.
+  amount: Amount to be confirmed
+  deadline: "2027-01-15"
+  status: Open
+  sample: true
+  tags:
+    - Team formation
+    - Pilot research
+- id: intelligent-physical-systems
+  title: Intelligent and resilient physical systems
+  provider: Illustrative research sponsor
+  type: Research grant
+  summary: An example call connecting AI methods with sensing, control, secure operation, and evaluation in physical environments.
+  eligibility: A real listing will state institution, investigator, and partnership requirements.
+  amount: Amount to be confirmed
+  deadline: "2027-03-01"
+  status: Open
+  sample: true
+  tags:
+    - Physical AI
+    - Cyber-physical systems
+- id: research-partnership-development
+  title: Collaborative research concept support
+  provider: Illustrative partnership program
+  type: Collaboration support
+  summary: An example of support for researchers and domain partners exploring a joint project and defining its research scope.
+  eligibility: Example eligibility would depend on the team and participating organizations.
+  amount: Support varies by project
+  status: Rolling
+  sample: true
+  tags:
+    - Partnerships
+    - Proposal development

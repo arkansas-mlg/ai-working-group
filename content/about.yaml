@@ -1,0 +1,57 @@
+eyebrow: Our purpose
+title: Shared questions. New possibilities.
+intro: The AI Working Group connects University of Arkansas researchers who develop or use AI. We bring complementary methods, domain knowledge, and infrastructure together around engineering problems that benefit from collaboration.
+themes:
+  - id: physical-ai
+    title: Physical AI
+    description: Develop systems that perceive, reason, and act in the physical world. Connect algorithms and hardware with sensing, computing, and control for efficient, secure, and robust operation.
+    topics:
+      - Autonomous systems
+      - Sensing & control
+      - Computing & hardware
+      - Security & robustness
+  - id: ai-for-physical-systems
+    title: AI for physical systems
+    description: Use AI to model physical processes, guide experiments, and improve engineering designs and operations. Connect methods and datasets with the needs of scientific discovery.
+    topics:
+      - Scientific machine learning
+      - Experiment design
+      - Materials & energy
+      - Biomedical & food systems
+goals:
+  - id: research-teams
+    title: Connect expertise
+    description: Create space for researchers to exchange ideas, identify shared problems, and form interdisciplinary teams.
+  - id: student-training
+    title: Support student learning
+    description: Introduce students to research through hands-on demonstrations, mentoring, and opportunities to share their work.
+  - id: external-proposals
+    title: Develop research proposals
+    description: Turn shared questions into collaborative concepts, match them with funding opportunities, and prepare competitive proposals.
+  - id: shared-infrastructure
+    title: Share research resources
+    description: Connect expertise, datasets, models, computing, and facilities, then identify infrastructure needs for future investment.
+milestones:
+  - period: October–December 2026
+    title: Meet, map, and frame
+    description: Begin research exchanges, map available expertise and resources, and identify shared research problems.
+    status: Planned
+  - period: January–March 2027
+    title: Develop the ideas
+    description: Hold the first concept-development workshop and a student workshop, with a goal of developing two collaborative concept notes.
+    status: Planned
+  - period: April–July 2027
+    title: Prepare the next step
+    description: Hold a second concept-development workshop, review proposals, and prepare an infrastructure roadmap and at least one submission-ready external proposal.
+    status: Planned
+project_intro: Collaborations will grow from shared research questions. This space will collect project ideas, research challenges, and outcomes as teams take shape.
+themes_title: Two connected research directions
+goals_eyebrow: What we work toward
+goals_title: Our goals
+roadmap_eyebrow: The first chapter
+roadmap_title: A shared roadmap
+roadmap_intro: Proposed milestones for the 2026–27 working group. Activity dates will be added to the schedule as they are confirmed.
+projects_eyebrow: Questions worth sharing
+projects_title: Ideas & collaborations
+projects_empty_title: Room for the next idea
+projects_empty_description: Research questions and collaborations will appear here as teams take shape.

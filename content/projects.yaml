@@ -1,0 +1,17 @@
+# Illustrative research challenges, not established projects or commitments.
+- id: learning-with-physical-constraints
+  title: Learning with physical constraints
+  summary: An example research question exploring how learning methods can respect operating limits while supporting useful decisions in a physical system.
+  status: Research concept
+  sample: true
+  tags:
+    - AI for physical systems
+    - Modeling & control
+- id: reliable-autonomous-operation
+  title: Reliable autonomy in changing environments
+  summary: An example research question connecting sensing, uncertainty, and secure operation for autonomous systems that encounter unfamiliar conditions.
+  status: Research concept
+  sample: true
+  tags:
+    - Physical AI
+    - Trustworthy AI

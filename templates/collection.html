@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% from 'macros.html' import collection_card, sample_note with context %}
+{% block content %}
+<header class="container page-header"><p class="eyebrow">{{ page_meta.eyebrow }}</p><h1 class="page-title">{{ page_title }}</h1><p class="page-intro">{{ page_meta.intro }}</p></header>
+<section class="container page-content collection-section" data-collection="{{ page }}" aria-label="{{ page_title }} listings">
+  {% if entries | selectattr('sample') | list %}{{ sample_note(site) }}{% endif %}
+  {% if entries %}
+  <form class="filter-bar" role="search" data-filters hidden>
+    <div class="filter-field filter-search"><label for="search">Search {{ 'activities' if page == 'events' else 'listings' }}</label><input id="search" type="search" name="q" placeholder="Search by topic, keyword, or name…" autocomplete="off"></div>
+    <div class="filter-field"><label for="type">Type</label><select id="type" name="type"><option value="">All types</option>{% for type in types %}<option value="{{ type }}">{{ type }}</option>{% endfor %}</select></div>
+    <div class="filter-field"><label for="status">Status</label><select id="status" name="status"><option value="">All statuses</option>{% for status in statuses %}<option value="{{ status }}">{{ status }}</option>{% endfor %}</select></div>
+    <button class="filter-reset" type="reset">Reset filters</button>
+  </form>
+  <p class="filter-summary" data-result-count role="status" aria-live="polite">{{ entries | length }} {{ 'activities' if page == 'events' else 'listings' }}</p>
+  <div class="collection-grid">{% for item in entries %}{{ collection_card(item, page) }}{% endfor %}</div>
+  <div class="empty-state" data-no-results hidden><h2>No matching results</h2><p>Try a broader search or reset your filters.</p><button class="button button-secondary" type="button" data-clear-filters>Clear filters</button></div>
+  {% else %}<div class="empty-state"><p class="eyebrow">Watch this space</p><h2>{{ page_meta.empty_title | default('More to come') }}</h2><p>{{ page_meta.empty_description | default('New entries will be added here as they are announced.') }}</p>{% if site.email %}<a class="text-link" href="mailto:{{ site.email }}">Suggest a contribution <span aria-hidden="true">↗</span></a>{% endif %}</div>{% endif %}
+</section>
+{% endblock %}

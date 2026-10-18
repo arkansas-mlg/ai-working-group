@@ -1,0 +1,82 @@
+name: AI Working Group
+short_name: AIWG
+institution: University of Arkansas
+college: College of Engineering
+description: Connecting researchers developing and applying AI to understand, design, and operate physical systems.
+email: jungtaek.kim@uark.edu
+location: Fayetteville, Arkansas
+nav:
+  - label: About
+    path: about/
+  - label: People
+    path: people/
+  - label: Schedule
+    path: schedule/
+  - label: Compute & Credits
+    path: compute/
+  - label: Funding
+    path: funding/
+  - label: Resources
+    path: resources/
+hero:
+  eyebrow: University of Arkansas · College of Engineering
+  title: AI meets the
+  emphasis: physical world.
+  description: We bring researchers together across disciplines to explore physical AI and AI for physical systems—connecting ideas, people, and the resources to move research forward.
+  primary_label: Explore our goals
+  primary_path: about/
+  secondary_label: Meet the people
+  secondary_path: people/
+join:
+  eyebrow: Build something together
+  title: Bring a question. Find a collaborator.
+  description: Faculty and students are welcome to share a research challenge, suggest an activity, or contribute a resource. Contact the group to get involved.
+  label: Get in touch
+  email: jungtaek.kim@uark.edu
+footer_note: Connecting AI research and engineering across the University of Arkansas.
+pages:
+  people:
+    eyebrow: Our people
+    title: Different expertise. Shared curiosity.
+    intro: Meet the leadership team connecting researchers across disciplines. Our community will grow with new questions, collaborations, and student participation.
+    empty_title: Meet our community soon
+    empty_description: Profiles will appear here as people join the group. Get in touch to introduce your work.
+  events:
+    eyebrow: Learn and connect
+    title: Make room for the next idea.
+    intro: Research exchanges, workshops, and conversations bring our community together. Explore upcoming activities and revisit past events.
+    empty_title: More conversations ahead
+    empty_description: New activities will appear here as they take shape. Contact the group to suggest a topic or share your research.
+  compute:
+    eyebrow: Research resources
+    title: Computing for your next question.
+    intro: Explore computing access, research allocations, and cloud credits that can help move an idea toward an experiment.
+    empty_title: Computing opportunities will appear here
+    empty_description: We are building a directory of resources and access routes. Contact the group to suggest an opportunity.
+  funding:
+    eyebrow: Support the next step
+    title: Find a path from idea to proposal.
+    intro: Discover opportunities to develop collaborations, test research concepts, and support shared ambitions across disciplines.
+    empty_title: Funding opportunities will appear here
+    empty_description: We are collecting relevant calls and programs. Contact the group to share an opportunity or discuss a research concept.
+  resources:
+    eyebrow: Share what helps
+    title: A growing collection of research resources.
+    intro: Find learning materials, datasets, tools, and facilities contributed through the group's activities and collaborations.
+    empty_title: Our shared collection starts here
+    empty_description: Resources will appear as the group develops. Get in touch to contribute materials or describe a useful capability.
+home:
+  themes_eyebrow: Two connected directions
+  themes_title: Intelligence grounded in the physical world.
+  themes_description: From autonomous systems to scientific discovery, our themes connect AI methods with engineering questions.
+  events_eyebrow: On the calendar
+  events_title: Ideas grow through conversation.
+  events_description: Join research exchanges, hands-on workshops, and opportunities to learn from one another.
+  opportunities_eyebrow: Move research forward
+  opportunities_title: Resources for the next step.
+  opportunities_description: Explore computing and funding opportunities that can help teams develop and pursue shared ideas.
+  people_eyebrow: Meet the group
+  people_title: Collaboration starts with people.
+  people_description: Our leadership team brings together complementary perspectives and welcomes connections across the university.
+sample_notice: Entries marked Sample illustrate future content. Dates, availability, and eligibility are examples.
+art_caption: Algorithms, intelligence, and the physical world.

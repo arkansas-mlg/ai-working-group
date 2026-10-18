@@ -205,6 +205,9 @@ cython_debug/
 # Temporary file for partial code execution
 tempCodeRunnerFile.py
 
+# Local GitHub Pages previews
+.preview/
+
 # Ruff stuff:
 .ruff_cache/
 
