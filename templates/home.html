@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% from 'macros.html' import tags, badges, date_tile, person_card, sample_note with context %}
+{% from 'macros.html' import tags, badges, date_tile, sample_note with context %}
 {% block content %}
 <section class="container hero" aria-labelledby="hero-title">
   <div class="hero-copy">
@@ -41,7 +41,4 @@
     </section>
   </div>
 </div>
-{% if people %}
-<section class="section" aria-labelledby="home-people-title"><div class="container"><div class="section-heading"><div><p class="eyebrow">{{ site.home.people_eyebrow }}</p><h2 id="home-people-title">{{ site.home.people_title }}</h2></div><a class="text-link" href="{{ url('people/') }}">Meet the group <span aria-hidden="true">↗</span></a></div><p class="section-description">{{ site.home.people_description }}</p><div class="people-grid">{% for person in people[:3] %}{{ person_card(person, compact=true) }}{% endfor %}</div></div></section>
-{% endif %}
 {% endblock %}

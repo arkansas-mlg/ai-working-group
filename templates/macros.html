@@ -15,14 +15,14 @@
   <div class="date-tile" aria-hidden="true">{% if item.date %}<span class="date-month">{{ item.date | date_label('month') }}</span><span class="date-day">{{ item.date | date_label('day') }}</span>{% else %}<span class="date-tba">TBA</span>{% endif %}</div>
 {%- endmacro %}
 
-{% macro person_card(person, compact=false) -%}
+{% macro person_card(person) -%}
   <article class="person-card" id="{{ person.id }}">
     <div class="person-initials" aria-hidden="true">{{ person.initials | default(person.name[0]) }}</div>
     <div class="person-content">
       <p class="person-role">{{ person.role }}</p>
       <h3>{{ person.name }}</h3>
       {% if person.department %}<p class="person-department">{{ person.department }}</p>{% endif %}
-      {% if not compact and person.bio %}<p class="person-bio">{{ person.bio }}</p>{% endif %}
+      {% if person.bio %}<p class="person-bio">{{ person.bio }}</p>{% endif %}
       {{ tags(person.interests) }}
       <div class="person-links">{% if person.email %}<a href="mailto:{{ person.email }}">Email {{ person.name.split()[0] }} <span aria-hidden="true">↗</span></a>{% endif %}{% if person.url %}<a href="{{ url(person.url) }}">Profile <span aria-hidden="true">↗</span></a>{% endif %}</div>
     </div>
