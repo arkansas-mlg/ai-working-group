@@ -1,14 +1,9 @@
 {% macro badges(item) -%}
-  {% if item.sample %}<span class="badge badge-sample">Sample</span>{% endif %}
   {% if item.status %}<span class="badge badge-status{% if item.status in ['Closed', 'Past'] %} badge-closed{% endif %}" data-status-label>{{ item.status }}</span>{% endif %}
 {%- endmacro %}
 
 {% macro tags(items) -%}
   {% if items %}<ul class="tag-list" aria-label="Topics">{% for tag in items %}<li class="tag">{{ tag }}</li>{% endfor %}</ul>{% endif %}
-{%- endmacro %}
-
-{% macro sample_note(site) -%}
-  <p class="sample-note"><span class="badge badge-sample">Sample</span> {{ site.sample_notice | default('Entries marked Sample are illustrative and are not announcements of actual events or opportunities.') }}</p>
 {%- endmacro %}
 
 {% macro date_tile(item) -%}

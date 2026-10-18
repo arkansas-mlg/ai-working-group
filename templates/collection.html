@@ -1,9 +1,8 @@
 {% extends 'base.html' %}
-{% from 'macros.html' import collection_card, sample_note with context %}
+{% from 'macros.html' import collection_card with context %}
 {% block content %}
 <header class="container page-header"><p class="eyebrow">{{ page_meta.eyebrow }}</p><h1 class="page-title">{{ page_title }}</h1><p class="page-intro">{{ page_meta.intro }}</p></header>
 <section class="container page-content collection-section" data-collection="{{ page }}" aria-label="{{ page_title }} listings">
-  {% if entries | selectattr('sample') | list %}{{ sample_note(site) }}{% endif %}
   {% if entries %}
   <form class="filter-bar" role="search" data-filters hidden>
     <div class="filter-field filter-search"><label for="search">Search {{ 'activities' if page == 'events' else 'listings' }}</label><input id="search" type="search" name="q" placeholder="Search by topic, keyword, or name…" autocomplete="off"></div>

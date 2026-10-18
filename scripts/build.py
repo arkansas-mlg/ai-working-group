@@ -183,7 +183,6 @@ def build_site(content_dir, output, base_path="", exclude_samples=False):
     env.globals.update(url=url)
     context = {
         **data,
-        "has_samples": any(item.get("sample") for name in COLLECTIONS for item in data[name]),
         "year": today[:4],
         "base_path": base_path,
         "today": today,
