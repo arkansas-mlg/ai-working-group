@@ -8,10 +8,9 @@
     <p>{{ site.hero.description }}</p>
     <div class="hero-actions"><a class="button button-primary" href="{{ url(site.hero.primary_path) }}">{{ site.hero.primary_label }} <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="{{ url(site.hero.secondary_path) }}">{{ site.hero.secondary_label }} <span aria-hidden="true">→</span></a></div>
   </div>
-  <figure class="hero-art"><img src="{{ url('assets/network.svg') }}" alt="" width="560" height="500"><figcaption class="art-caption"><span aria-hidden="true">FIG. 01</span> {{ site.art_caption }}</figcaption></figure>
 </section>
 {% if about.themes %}
-<section class="section section-muted" aria-labelledby="themes-title">
+<section class="section" aria-labelledby="themes-title">
   <div class="container">
     <div class="section-heading"><div><p class="eyebrow">{{ site.home.themes_eyebrow }}</p><h2 id="themes-title">{{ site.home.themes_title }}</h2></div><p>{{ site.home.themes_description }}</p></div>
     <div class="theme-grid">{% for theme in about.themes %}<article class="theme-block"><span class="theme-number">0{{ loop.index }}</span><div><h3><a href="{{ url('about/#' ~ theme.id) }}">{{ theme.title }} <span aria-hidden="true">↗</span></a></h3><p>{{ theme.description }}</p>{{ tags(theme.topics) }}</div></article>{% endfor %}</div>
@@ -44,6 +43,6 @@
   </div>
 </div>
 {% if people %}
-<section class="section section-muted" aria-labelledby="home-people-title"><div class="container"><div class="section-heading"><div><p class="eyebrow">{{ site.home.people_eyebrow }}</p><h2 id="home-people-title">{{ site.home.people_title }}</h2></div><a class="text-link" href="{{ url('people/') }}">Meet the group <span aria-hidden="true">↗</span></a></div><p class="section-description">{{ site.home.people_description }}</p><div class="people-grid">{% for person in people[:3] %}{{ person_card(person, compact=true) }}{% endfor %}</div></div></section>
+<section class="section" aria-labelledby="home-people-title"><div class="container"><div class="section-heading"><div><p class="eyebrow">{{ site.home.people_eyebrow }}</p><h2 id="home-people-title">{{ site.home.people_title }}</h2></div><a class="text-link" href="{{ url('people/') }}">Meet the group <span aria-hidden="true">↗</span></a></div><p class="section-description">{{ site.home.people_description }}</p><div class="people-grid">{% for person in people[:3] %}{{ person_card(person, compact=true) }}{% endfor %}</div></div></section>
 {% endif %}
 {% endblock %}
