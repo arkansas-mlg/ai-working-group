@@ -10,3 +10,17 @@
   tags:
     - High-performance computing
     - Scientific computing
+
+- id: nsf-access
+  title: ACCESS Research Computing
+  provider: U.S. National Science Foundation (NSF)
+  type: Research allocations
+  summary: No-cost allocations for advanced computing, GPU, cloud, and storage resources to support research and education.
+  eligibility: U.S.-based researchers and educators at eligible institutions; graduate students may lead Explore or Discover projects with advisor guidance.
+  access: Register for an ACCESS ID and request an allocation matched to your project's computing needs.
+  url: https://access-ci.org/
+  link_label: Visit ACCESS
+  tags:
+    - High-performance computing
+    - GPUs
+    - Cloud computing
