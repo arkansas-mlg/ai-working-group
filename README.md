@@ -68,7 +68,7 @@ Additional fields used by the initial content include:
 
 Add `url` for a profile, project, or opportunity link. Schedule, compute, and funding listings can use `link_label` for its display text and `last_checked` to show when the listing was verified. Supported links are HTTPS, HTTP, email, and local site paths.
 
-Quote dates as `"YYYY-MM-DD"`. Omit a date or deadline when it is not confirmed. Events with past dates and opportunities with past deadlines are marked past or closed when the site is rebuilt. Collection pages also refresh these statuses in the browser between builds, using the group's America/Chicago time zone. Use `[]` or a blank file for an empty collection; its page remains available with an empty state. Text is rendered as plain content rather than raw HTML.
+Quote dates as `"YYYY-MM-DD"`. Omit a date or deadline when it is not confirmed. Events with past dates and opportunities with past deadlines are marked past or closed when the site is rebuilt. Collection pages also refresh these statuses in the browser between builds, using the group's America/Chicago time zone. Use `[]` or a blank file for an empty collection; its page remains available without entries. Text is rendered as plain content rather than raw HTML.
 
 The initial activities, opportunities, and research concepts are illustrative and marked internally with `sample: true`, which produces no visible notices or labels. Replace or remove them as real content becomes available. To build a version that omits all samples:
 

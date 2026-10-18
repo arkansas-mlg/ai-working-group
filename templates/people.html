@@ -6,5 +6,5 @@
   {% if page_meta.title %}<h1 class="page-title">{{ page_meta.title }}</h1>{% endif %}
   <p class="page-intro">{{ page_meta.intro }}</p>
 </header>
-<section class="container page-content" aria-label="Working group members"><div class="people-grid">{% for person in people %}{{ person_card(person) }}{% else %}<div class="empty-state"><h2>{{ page_meta.empty_title | default('Meet the group soon') }}</h2><p>{{ page_meta.empty_description | default('Participant profiles will be added here.') }}</p></div>{% endfor %}</div></section>
+<section class="container page-content" aria-label="Working group members"><div class="people-grid">{% for person in people %}{{ person_card(person) }}{% endfor %}</div></section>
 {% endblock %}

@@ -25,7 +25,6 @@
       {% for event in events | rejectattr('status', 'equalto', 'Past') | list %}{% if loop.index <= 3 %}
         <article class="event-row" data-preview-entry data-date="{{ event.date | default('') }}">{{ date_tile(event) }}<div class="event-info"><div class="item-meta"><span>{{ event.type }}</span>{{ badges(event) }}</div><h3><a href="{{ url('schedule/#' ~ event.id) }}">{{ event.title }}</a></h3><p>{% if event.date %}<time datetime="{{ event.date }}">{{ event.date | date_label }}</time>{% else %}Date to be announced{% endif %}</p></div></article>
       {% endif %}{% endfor %}
-        <div class="empty-state" data-preview-empty{% if events | rejectattr('status', 'equalto', 'Past') | list %} hidden{% endif %}><h3>{{ site.pages.events.empty_title }}</h3><p>{{ site.pages.events.empty_description }}</p></div>
       </div>
     </section>
     <section aria-labelledby="home-opportunities-title">

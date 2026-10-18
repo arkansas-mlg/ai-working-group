@@ -17,6 +17,6 @@
   <p class="filter-summary" data-result-count role="status" aria-live="polite">{{ entries | length }} {{ 'activities' if page == 'events' else 'listings' }}</p>
   <div class="collection-grid">{% for item in entries %}{{ collection_card(item, page) }}{% endfor %}</div>
   <div class="empty-state" data-no-results hidden><h2>No matching results</h2><p>Try a broader search or reset your filters.</p><button class="button button-secondary" type="button" data-clear-filters>Clear filters</button></div>
-  {% else %}<div class="empty-state"><p class="eyebrow">Watch this space</p><h2>{{ page_meta.empty_title | default('More to come') }}</h2><p>{{ page_meta.empty_description | default('New entries will be added here as they are announced.') }}</p>{% if site.email %}<a class="text-link" href="mailto:{{ site.email }}">Suggest a contribution <span aria-hidden="true">↗</span></a>{% endif %}</div>{% endif %}
+  {% endif %}
 </section>
 {% endblock %}

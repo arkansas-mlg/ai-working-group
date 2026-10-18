@@ -35,23 +35,15 @@ pages:
   people:
     eyebrow: Our people
     intro: Meet the leadership team connecting researchers across disciplines. Our community will grow with new questions, collaborations, and student participation.
-    empty_title: Meet our community soon
-    empty_description: Profiles will appear here as people join the group. Get in touch to introduce your work.
   events:
     eyebrow: Learn and connect
     intro: Research exchanges, workshops, and conversations bring our community together. Explore upcoming activities and revisit past events.
-    empty_title: More conversations ahead
-    empty_description: New activities will appear here as they take shape. Contact the group to suggest a topic or share your research.
   compute:
     eyebrow: Research resources
     intro: Explore computing access, research allocations, and cloud credits that can help move an idea toward an experiment.
-    empty_title: Computing opportunities will appear here
-    empty_description: We are building a directory of resources and access routes. Contact the group to suggest an opportunity.
   funding:
     eyebrow: Support the next step
     intro: Discover opportunities to develop collaborations, test research concepts, and support shared ambitions across disciplines.
-    empty_title: Funding opportunities will appear here
-    empty_description: We are collecting relevant calls and programs. Contact the group to share an opportunity or discuss a research concept.
 home:
   themes_eyebrow: Two connected directions
   themes_title: Intelligence grounded in the physical world.
