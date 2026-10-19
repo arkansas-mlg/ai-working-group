@@ -1,45 +1,7 @@
-# All records below are illustrative. Replace them with confirmed activities,
-# or use [] for an empty schedule. Sample dates are not event announcements.
-- id: research-exchange-sensing
-  title: From sensing to intelligent action
-  type: Research exchange
-  summary: A conversation about connecting perception, learning, and control, followed by an open discussion of shared research questions.
-  date: "2026-11-12"
-  time: Time to be announced
-  location: Location to be announced
-  status: Upcoming
-  sample: true
-  tags:
-    - Physical AI
-    - Faculty & students
-- id: concept-development-workshop
-  title: Turning shared questions into research concepts
-  type: Concept workshop
-  summary: Small groups connect complementary expertise, frame a research problem, and outline the resources needed to pursue it.
-  location: Location to be announced
-  status: Planned
-  sample: true
-  tags:
-    - Collaboration
-    - Proposal development
-- id: student-workshop
-  title: A hands-on introduction to AI for physical systems
-  type: Student workshop
-  summary: Explore a demonstration dataset, discuss ways to evaluate a model, and meet researchers working across engineering disciplines.
-  location: Location to be announced
-  status: Planned
-  sample: true
-  tags:
-    - AI for physical systems
-    - Student learning
-- id: research-exchange-shared-problems
-  title: Mapping expertise and shared research problems
-  type: Research exchange
-  summary: An example of an archived activity, showing where past talks, discussion topics, and future meeting materials can be collected.
-  date: "2026-10-01"
-  location: Example meeting format
-  status: Past
-  sample: true
-  tags:
-    - Collaboration
-    - Research resources
+# Omit date until confirmed; the website displays TBA.
+- id: kick-off-meeting
+  title: AI Working Group Kick-off Meeting
+  type: Meeting
+  summary: Meet the group and discuss shared research interests and plans for upcoming activities.
+  time: To be announced
+  location: To be announced

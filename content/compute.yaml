@@ -7,9 +7,6 @@
   access: Request a user account through the AHPCC website.
   url: https://hpc.uark.edu/
   link_label: Visit AHPCC
-  tags:
-    - High-performance computing
-    - Scientific computing
 
 - id: nsf-access
   title: ACCESS Research Computing
@@ -20,10 +17,6 @@
   access: Register for an ACCESS ID and request an allocation matched to your project's computing needs.
   url: https://access-ci.org/
   link_label: Visit ACCESS
-  tags:
-    - High-performance computing
-    - GPUs
-    - Cloud computing
 
 - id: google-cloud-research-credits
   title: Google Cloud Research Credits
@@ -34,9 +27,6 @@
   access: Apply online with a short research proposal, estimated Google Cloud costs, and a billing account ID.
   url: https://edu.google.com/programs/credits/research/
   link_label: View Google Cloud program
-  tags:
-    - Cloud computing
-    - Academic research
 
 - id: aws-cloud-credit-for-research
   title: AWS Cloud Credit for Research
@@ -47,10 +37,6 @@
   access: Apply online with a research proposal and estimated AWS service usage; applications are reviewed throughout the year.
   url: https://aws.amazon.com/government-education/research-and-technical-computing/cloud-credit-for-research/
   link_label: View AWS program
-  tags:
-    - Cloud computing
-    - Research tools
-    - Research training
 
 - id: snorkel-open-benchmarks-grants
   title: Snorkel Open Benchmarks Grants
@@ -61,7 +47,3 @@
   access: Submit a benchmark proposal through the program website; proposals are accepted on a rolling basis.
   url: https://benchmarks.snorkel.ai/
   link_label: View Snorkel program
-  tags:
-    - AI evaluation
-    - Open benchmarks
-    - Physical AI
