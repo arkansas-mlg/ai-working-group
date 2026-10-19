@@ -24,3 +24,44 @@
     - High-performance computing
     - GPUs
     - Cloud computing
+
+- id: google-cloud-research-credits
+  title: Google Cloud Research Credits
+  provider: Google Cloud
+  type: Cloud credits
+  summary: Google Cloud credits for academic research projects using cloud infrastructure and services.
+  eligibility: Faculty members, doctoral students, and postdoctoral researchers affiliated with accredited higher education institutions or eligible nonprofit research institutions in supported countries.
+  access: Apply online with a short research proposal, estimated Google Cloud costs, and a billing account ID.
+  url: https://edu.google.com/programs/credits/research/
+  link_label: View Google Cloud program
+  tags:
+    - Cloud computing
+    - Academic research
+
+- id: aws-cloud-credit-for-research
+  title: AWS Cloud Credit for Research
+  provider: Amazon Web Services (AWS)
+  type: Cloud credits
+  summary: AWS promotional credits for public research tools, cloud proof-of-concept and benchmark studies, and community training in cloud-based research.
+  eligibility: Full-time faculty or research staff, and graduate or postgraduate students, at accredited research institutions.
+  access: Apply online with a research proposal and estimated AWS service usage; applications are reviewed throughout the year.
+  url: https://aws.amazon.com/government-education/research-and-technical-computing/cloud-credit-for-research/
+  link_label: View AWS program
+  tags:
+    - Cloud computing
+    - Research tools
+    - Research training
+
+- id: snorkel-open-benchmarks-grants
+  title: Snorkel Open Benchmarks Grants
+  provider: Snorkel AI
+  type: Compute & research support
+  summary: Support for developing open AI benchmarks, including compute credits, hosting, expert data, and research and engineering assistance.
+  eligibility: Researchers, domain experts, and open-source teams developing open benchmarks or new evaluation methods.
+  access: Submit a benchmark proposal through the program website; proposals are accepted on a rolling basis.
+  url: https://benchmarks.snorkel.ai/
+  link_label: View Snorkel program
+  tags:
+    - AI evaluation
+    - Open benchmarks
+    - Physical AI
