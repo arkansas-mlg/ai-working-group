@@ -37,7 +37,7 @@ ul, ol { padding-left: 1.35rem; }
 .site-header { border-bottom: 1px solid var(--line); }
 .header-inner { display: flex; justify-content: space-between; align-items: center; min-height: 108px; gap: 2rem; }
 .brand { display: inline-flex; align-items: center; min-width: 0; flex-shrink: 1; color: var(--red); text-decoration: none; }
-.brand-title { font-size: 18px; line-height: 1.4; font-weight: 650; letter-spacing: -.025em; white-space: pre-line; }
+.brand-title { font-size: 24px; line-height: 1.4; font-weight: 650; letter-spacing: -.025em; white-space: pre-line; }
 .site-nav { display: flex; align-items: center; flex-shrink: 0; gap: 25px; }
 .site-nav a { position: relative; padding: 13px 0; color: var(--muted); font-size: 13px; font-weight: 550; text-decoration: none; white-space: nowrap; }
 .site-nav a::after { position: absolute; right: 0; bottom: 5px; left: 0; border-bottom: 2px solid var(--red); content: ""; transform: scaleX(0); transform-origin: left; transition: transform 160ms ease; }
@@ -205,7 +205,7 @@ ul, ol { padding-left: 1.35rem; }
   .header-inner { gap: 20px; min-height: 94px; }
   .site-nav { gap: 17px; }
   .site-nav a { font-size: 12px; }
-  .brand-title { font-size: 16px; }
+  .brand-title { font-size: 20px; }
   .hero { padding-block: 62px; }
   .hero h1 { font-size: 53px; }
   .home-columns { gap: 40px; }
@@ -230,7 +230,7 @@ ul, ol { padding-left: 1.35rem; }
 @media (max-width: 640px) {
   .container { width: calc(100% - 40px); }
   .header-inner { position: relative; min-height: 85px; padding-block: 20px; }
-  .brand-title { font-size: 14px; }
+  .brand-title { font-size: 16px; }
   html.js .brand { max-width: calc(100% - 90px); }
   html.js .menu-toggle { display: inline-block; }
   .site-nav { flex-wrap: wrap; justify-content: flex-start; gap: 2px 24px; margin-top: 17px; padding-top: 12px; border-top: 1px solid var(--line); }
