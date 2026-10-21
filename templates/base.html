@@ -14,7 +14,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="{{ url() }}" aria-label="{{ site.header_title }} home">
+      <a class="brand" href="{{ url() }}" aria-label="{{ site.header_title | replace('\n', ' ') }} home">
         <span class="brand-title">{{ site.header_title }}</span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">Menu <span aria-hidden="true">☰</span></button>
