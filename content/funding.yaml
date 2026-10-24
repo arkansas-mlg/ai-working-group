@@ -1,39 +1,361 @@
-# Illustrative entries only. These are not active calls from real sponsors.
-- id: interdisciplinary-seed-funding
-  title: Interdisciplinary research seed award
-  provider: Illustrative university program
-  type: Seed funding
-  summary: An example opportunity for teams developing a shared research question, collecting preliminary evidence, and preparing an external proposal.
-  eligibility: Example eligibility would require collaborators from more than one discipline.
-  amount: Amount to be confirmed
-  deadline: "2027-01-15"
-  status: Open
-  sample: true
-  tags:
-    - Team formation
-    - Pilot research
-- id: intelligent-physical-systems
-  title: Intelligent and resilient physical systems
-  provider: Illustrative research sponsor
+# Verified opportunities; deadlines reflect the next entry route for a new applicant.
+# Standard NSF eligibility: https://www.nsf.gov/policies/pappg/24-1/ch-1-pre-submission
+# Full solicitation: https://www.nsf.gov/funding/opportunities/future-core-computer-information-science-engineering-future-computing/nsf25-543/solicitation
+- id: nsf-future-core
+  title: Future Computing Research (Future CoRe) — NSF 25-543
+  provider: NSF — Computer and Information Science and Engineering
   type: Research grant
-  summary: An example call connecting AI methods with sensing, control, secure operation, and evaluation in physical environments.
-  eligibility: A real listing will state institution, investigator, and partnership requirements.
-  amount: Amount to be confirmed
-  deadline: "2027-03-01"
-  status: Open
-  sample: true
+  summary: Supports foundational computing research, including Robust Intelligence, Algorithmic Foundations, and Cyber-Physical System Foundations and Connected Communities. Potential fits include new AI methods, optimization, and intelligent physical systems.
+  eligibility: U.S. institutions of higher education may apply. An individual may participate as PI, co-PI, or senior/key personnel on at most two Future CoRe proposals in any consecutive 12 months; there is no institutional submission limit.
+  amount: Up to $1,000,000 total for up to 4 years.
+  status: Rolling
+  url: https://www.nsf.gov/funding/opportunities/future-core-computer-information-science-engineering-future-computing
+  last_checked: "2026-10-24"
+  details:
+    - "Proposals are accepted anytime. Recommended review-cycle targets are February 4, 2027 and September 9, 2027; these are not deadlines."
+    - "Typical projects request approximately $150,000–$250,000 per year for 3–4 years."
+    - "CPS and Robust Intelligence are programs within this solicitation."
   tags:
     - Physical AI
     - Cyber-physical systems
-- id: research-partnership-development
-  title: Collaborative research concept support
-  provider: Illustrative partnership program
-  type: Collaboration support
-  summary: An example of support for researchers and domain partners exploring a joint project and defining its research scope.
-  eligibility: Example eligibility would depend on the team and participating organizations.
-  amount: Support varies by project
+    - Artificial intelligence
+    - Optimization
+
+- id: nsf-foundational-research-robotics
+  title: Foundational Research in Robotics (FRR) — PD 20-144Y
+  provider: NSF — Engineering and Computer and Information Science and Engineering
+  type: Research grant
+  summary: Supports fundamental advances in robots that combine computation with physical embodiment. Potential projects could develop new capabilities in sensing, planning, learning, control, and autonomous action.
+  eligibility: U.S. institutions of higher education may apply under standard NSF rules. The intellectual contribution must address a fundamental robotics problem and improve the capabilities of a robot or class of robots.
   status: Rolling
-  sample: true
+  url: https://www.nsf.gov/funding/opportunities/frr-foundational-research-robotics
+  last_checked: "2026-10-24"
+  details:
+    - "Full proposals are accepted anytime."
+    - "Discussion with an FRR program officer before submission is strongly encouraged; experimental validation on a physical platform is encouraged."
+    - "Declined proposals require substantial revision and a minimum one-year interval from the original submission before resubmission."
   tags:
-    - Partnerships
-    - Proposal development
+    - Physical AI
+    - Robotics
+    - Autonomous systems
+    - Sensing and control
+
+# Full solicitation: https://www.nsf.gov/funding/opportunities/nsf-satc-us-national-science-foundation-security-privacy-trust/nsf25-515/solicitation
+- id: nsf-satc-research
+  title: Security, Privacy, and Trust in Cyberspace — Research (NSF 25-515)
+  provider: NSF — Computer and Information Science and Engineering and partner directorates
+  type: Research grant
+  summary: Supports research on security, privacy, and resilience in interconnected cyber systems. Potential fits include trustworthy AI, AI security, and resilient cyber-physical systems.
+  eligibility: U.S. institutions of higher education may apply. PIs, co-PIs, and senior/key personnel must hold a tenured or tenure-track position, or a primary full-time paid research or teaching appointment, at an eligible U.S. institution; each may join at most two RES proposals in a contiguous 12 months.
+  amount: Up to $1,200,000 total for up to 4 years.
+  status: Rolling
+  url: https://www.nsf.gov/funding/opportunities/nsf-satc-us-national-science-foundation-security-privacy-trust
+  last_checked: "2026-10-24"
+  details:
+    - "Proposals are accepted anytime. Recommended review-cycle targets are January 25, 2027 and September 27, 2027; these are not deadlines."
+    - "Projects exceeding $600,000 have additional collaboration and broadening-participation planning requirements as applicable."
+    - "The overall 12-month individual limit is four SaTC proposals: two RES, one EDU, and one SEED."
+  tags:
+    - Trustworthy AI
+    - AI security
+    - Cyber-physical systems
+
+- id: nsf-eccs
+  title: Electrical, Communications, and Computing Systems (ECCS) — NSF 26-514
+  provider: NSF — Directorate for Engineering
+  type: Research grant
+  summary: Supports foundational electrical, communications, and computing research. Energy, Power, Control, and Learning offers a route for AI and control; Circuits and Systems for Communications and Sensing covers sensing research.
+  eligibility: U.S. institutions of higher education may apply under standard NSF rules. The solicitation has no additional PI restrictions or institutional or individual proposal-count limits.
+  status: Rolling
+  url: https://www.nsf.gov/funding/opportunities/eccs-engineering-electrical-communications-computing-systems/nsf26-514/solicitation
+  last_checked: "2026-10-24"
+  details:
+    - "Proposals are accepted anytime; a letter of intent or preliminary proposal is not required."
+    - "Budgets and durations should match the proposed scope; no fixed individual award cap is specified."
+    - "Investigators are strongly encouraged to discuss fit with a program director and send a one-page project summary before submitting."
+  tags:
+    - Sensing and control
+    - Machine learning
+    - Optimization
+    - Energy systems
+
+- id: nsf-cmmi
+  title: Civil, Mechanical, and Manufacturing Innovation (CMMI) — NSF 26-515
+  provider: NSF — Directorate for Engineering
+  type: Research grant
+  summary: Supports foundational engineering research. Intelligent and Interactive Dynamic Systems covers modeling, inference, control, and human interaction; Advanced Manufacturing, Design, and Operations offers a route for optimization, manufacturing, and supply-chain research.
+  eligibility: U.S. institutions of higher education may apply under standard NSF rules. The solicitation has no additional PI restrictions or institutional or individual proposal-count limits.
+  status: Rolling
+  url: https://www.nsf.gov/funding/opportunities/engineering-eng-civil-mechanical-manufacturing-innovation/nsf26-515/solicitation
+  last_checked: "2026-10-24"
+  details:
+    - "Proposals are accepted anytime; a letter of intent or preliminary proposal is not required."
+    - "Budgets and durations should match the proposed scope; no fixed individual award cap is specified."
+    - "Investigators are strongly encouraged to discuss fit with a program director and send a one-page project summary before submitting."
+  tags:
+    - Physical AI
+    - Scientific machine learning
+    - Optimization and logistics
+    - Manufacturing
+
+# Full solicitation: https://www.nsf.gov/funding/opportunities/career-faculty-early-career-development-program/nsf22-586/solicitation
+- id: nsf-career
+  title: Faculty Early Career Development Program (CAREER) — NSF 22-586
+  provider: NSF — Foundation-wide
+  type: Early-career award
+  summary: Supports an integrated research and education program led by an early-career faculty member. Potential topics include foundational AI, robotics, trustworthy systems, and engineering research aligned with an NSF program.
+  eligibility: U.S. institutions of higher education may apply for faculty with a doctoral degree, at least a 50% tenure-track or equivalent assistant-professor appointment, untenured status, and no previous CAREER award. One proposal per annual competition and at most three competitions per PI; co-PIs are not permitted.
+  amount: Minimum $400,000 including indirect costs over 5 years; minimum $500,000 for proposals to Engineering, Biological Sciences, or Polar Programs.
+  deadline: "2027-07-28"
+  status: Open
+  url: https://www.nsf.gov/funding/opportunities/career-faculty-early-career-development-program
+  last_checked: "2026-10-24"
+  details:
+    - "Full proposals are due July 28, 2027 at 5 p.m. in the submitting institution's local time."
+    - "Research and education activities must be integrated, and a departmental letter is required."
+    - "Individual eligibility and prior competition history must be checked against the annual deadline."
+  tags:
+    - Early-career faculty
+    - Research and education
+    - Artificial intelligence
+
+# Arkansas eligibility: https://www.nsf.gov/funding/initiatives/epscor/epscor-criteria-eligibility
+# Full solicitation: https://www.nsf.gov/funding/opportunities/epscor-research-infrastructure-improvement-epscor-research/nsf24-528/solicitation
+- id: nsf-epscor-research-fellows
+  title: EPSCoR Research Fellows — NSF track (NSF 24-528)
+  provider: NSF — EPSCoR
+  type: Faculty fellowship
+  summary: Supports faculty visits to research facilities to develop skills and collaborations that strengthen research capacity at the home institution. Potential projects include AI, robotics, and scientific machine learning.
+  eligibility: Arkansas institutions of higher education are eligible. At the deadline, PIs must hold a long-term appointment at the lecturer, research-faculty, assistant-professor, or associate-professor level; full professors and postdoctoral fellows are ineligible. Previous or current Research Fellows awardees cannot apply; no co-PIs are allowed.
+  amount: Up to $300,000 total over up to 24 months, supporting 1–6 months of research visits.
+  deadline: "2027-04-13"
+  status: Open
+  url: https://www.nsf.gov/funding/opportunities/epscor-research-infrastructure-improvement-epscor-research
+  last_checked: "2026-10-24"
+  details:
+    - "Full proposals are due April 13, 2027 at 5 p.m. in the submitting institution's local time."
+    - "The NSF track permits four proposals per institution and one per PI; coordinate institutional selection."
+    - "PIs must be positioned to sustain home-institution research capacity beyond the fellowship, generally for at least three years."
+    - "The host must be a U.S. research facility outside the PI's current institutional system. Supervisor, host-collaborator, and host-administrator support letters are required."
+  tags:
+    - EPSCoR
+    - Research partnerships
+    - Artificial intelligence
+
+# Full solicitation: https://www.nsf.gov/funding/opportunities/e-core-epscor-research-infrastructure-improvement-program-epscor/nsf25-523/solicitation
+# UArk AR-NETWORK subaward: https://news.uark.edu/articles/79893/ara-awards-u-of-a-1-8-million-to-expand-economic-development-efforts
+# Approved 2024 Arkansas S&T plan and jurisdictional steering structure:
+# https://www.arkansasedc.com/arkansas-nsf-epscor/division/state-science-technology-plan
+- id: nsf-epscor-e-core
+  title: EPSCoR Collaborations for Optimizing Research Ecosystems (E-CORE) — NSF 25-523
+  provider: NSF — EPSCoR
+  type: Research infrastructure
+  summary: Supports statewide research infrastructure, workforce, and partnership capacity. Potential fits include shared AI research facilities and networks connecting research to applications.
+  eligibility: Arkansas organizations may collaborate. UArk is a funded AR-NETWORK partner; non-lead participation in an existing E-CORE award is permitted. Current E-CORE or RII Track-1 leads face new-lead restrictions but may supply funded participants other than PI/co-PI on another organization's proposal.
+  amount: Up to $10,000,000 total for the initial 4-year project; the amount covers the whole collaboration.
+  deadline: "2027-07-20"
+  status: Open
+  url: https://www.nsf.gov/funding/opportunities/e-core-epscor-research-infrastructure-improvement-program-epscor
+  last_checked: "2026-10-24"
+  details:
+    - "Full proposals are due July 20, 2027 at 5 p.m. in the submitting organization's local time."
+    - "One lead submission or award per organization and one PI/co-PI role, subject to final-year and nonrenewal exceptions; PIs need at least a 50% eligible appointment. Coordinate any proposed lead role institutionally."
+    - "Requires statewide partners, an active steering committee, and an S&T plan updated within five years. Notify the committee and coordinate with existing Arkansas awards; activities must not duplicate current funding."
+  tags:
+    - EPSCoR
+    - Research infrastructure
+    - Research partnerships
+
+# Full solicitation: https://www.nsf.gov/funding/opportunities/e-rise-epscor-research-infrastructure-improvement-program-epscor/nsf25-522/solicitation
+# UArk's existing E-RISE: https://news.uark.edu/articles/82580/industry-government-university-leaders-unite-to-shape-arkansas-transportation
+# Project and award number: https://www.ar-strides.org/
+- id: nsf-epscor-e-rise
+  title: EPSCoR Research Incubators for STEM Excellence (E-RISE) — NSF 25-522
+  provider: NSF — EPSCoR
+  type: Collaborative research
+  summary: Supports statewide teams pursuing a shared research problem while building research capacity and workforce. Potential fits include interdisciplinary AI research aligned with Arkansas priorities.
+  eligibility: Arkansas is eligible. UArk's existing AR-STRIDES E-RISE award restricts a new lead submission. UArk faculty may join another eligible Arkansas organization's proposal as funded participants other than PI/co-PI, with activities distinct from existing awards.
+  amount: Up to $8,000,000 total for the initial 4-year project; the amount covers the whole collaboration.
+  deadline: "2027-08-10"
+  status: Open
+  url: https://www.nsf.gov/funding/opportunities/e-rise-epscor-research-infrastructure-improvement-program-epscor
+  last_checked: "2026-10-24"
+  details:
+    - "Full proposals are due August 10, 2027 at 5 p.m. in the submitting organization's local time."
+    - "One lead submission per organization; existing E-RISE or RII Track-1 leads are restricted unless in their final year or a nonrenewing extension. PI/co-PI award limits also apply."
+    - "Requires a statewide partnership, an active steering committee with current bylaws, an approved S&T plan from the past five years, and notification to that committee. Coordinate with existing Arkansas awards."
+  tags:
+    - EPSCoR
+    - Research partnerships
+    - Artificial intelligence
+
+# NIH new-application dates: https://grants.nih.gov/grants-process/submit/submission-policies/standard-due-dates
+- id: nih-parent-r01
+  title: NIH Research Project Grant — Parent R01 (PA-25-301)
+  provider: NIH — Participating institutes and centers
+  type: Research grant
+  summary: Supports investigator-initiated health research. Potential fits include biomedical AI, sensing, imaging, and modeling aligned with a participating institute.
+  eligibility: Public and private universities may apply. Investigators need appropriate expertise, and projects must fit a participating institute such as NIBIB, NLM, NCI, or NIGMS.
+  amount: Project-based budget with no announcement-wide cap; up to 5 years.
+  deadline: "2027-02-05"
+  status: Open
+  url: https://grants.nih.gov/grants/guide/pa-files/PA-25-301.html
+  last_checked: "2026-10-24"
+  details:
+    - "Clinical trials are not allowed under this announcement."
+    - "New applications are due February 5, 2027 at 5 p.m. in the applicant organization's local time; no required preliminary stage."
+    - "Later new-application dates follow the official recurring schedule; this announcement expires January 8, 2028."
+    - "Funded foreign subawards or subcontracts are not permitted under this announcement."
+  tags:
+    - Biomedical AI
+    - Imaging and sensing
+    - Scientific machine learning
+
+- id: nih-parent-r21
+  title: NIH Exploratory/Developmental Research Project Grant — Parent R21 (PA-25-304)
+  provider: NIH — Participating institutes and centers
+  type: Exploratory research grant
+  summary: Supports early-stage biomedical research and new tools. Potential fits include pilot biomedical AI, sensing, and modeling studies.
+  eligibility: Public and private universities may apply. Projects must fit a participating institute, including NIBIB, NLM, or NCI; institute participation differs from the Parent R01.
+  amount: Up to $275,000 direct costs over 2 years; no more than $200,000 in one year.
+  deadline: "2027-02-16"
+  status: Open
+  url: https://grants.nih.gov/grants/guide/pa-files/PA-25-304.html
+  last_checked: "2026-10-24"
+  details:
+    - "Clinical trials are not allowed under this announcement."
+    - "New applications are due February 16, 2027 at 5 p.m. in the applicant organization's local time; no required preliminary stage."
+    - "This announcement expires January 8, 2028."
+    - "Funded foreign subawards or subcontracts are not permitted under this announcement."
+  tags:
+    - Biomedical AI
+    - Pilot research
+    - Imaging and sensing
+
+- id: nih-nlm-bioinformatics
+  title: Advancing Bioinformatics, Translational Bioinformatics and Computational Biology Research (PAR-26-040)
+  provider: NIH — National Library of Medicine
+  type: Research grant
+  summary: Supports new computational methods for biological data, including AI, machine learning, and multimodal integration. Potential fits include methods for biomedical scientific discovery.
+  eligibility: Public and private universities may apply. Proposed methods must advance bioinformatics or computational biology and have broader utility beyond a narrow disease-specific application.
+  amount: Up to $250,000 direct costs per year for up to 4 years.
+  deadline: "2027-02-05"
+  status: Open
+  url: https://files.simpler.grants.gov/opportunities/ca108e77-69f6-4d3a-9723-a1353076a4ad/attachments/1882a2af-b08d-49bf-8edd-08ac7ad5facd/PAR-26-040-Full-Announcement.html
+  last_checked: "2026-10-24"
+  details:
+    - "R01 mechanism; clinical trials are optional."
+    - "New applications are due February 5, 2027 at 5 p.m. in the applicant organization's local time; no required preliminary stage."
+    - "This announcement expires March 6, 2029."
+    - "Funded foreign subawards or subcontracts are not permitted under this announcement."
+  tags:
+    - Biomedical AI
+    - Bioinformatics
+    - Scientific machine learning
+
+- id: nih-bioengineering-exploratory
+  title: Exploratory/Developmental Bioengineering Research Grants (PAR-25-346)
+  provider: NIH — National Cancer Institute and National Institute of Dental and Craniofacial Research
+  type: Exploratory research grant
+  summary: Supports engineering feasibility studies and development of new biomedical capabilities. Potential fits include machine learning and models of biological systems.
+  eligibility: Public and private universities may apply. Projects must develop or adapt technology and fit cancer or dental and craniofacial research.
+  amount: Up to $275,000 direct costs over 2 years; no more than $200,000 in one year.
+  deadline: "2027-02-16"
+  status: Open
+  url: https://grants.nih.gov/grants/guide/pa-files/PAR-25-346.html
+  last_checked: "2026-10-24"
+  details:
+    - "R21 mechanism; clinical trials are not allowed."
+    - "New applications are due February 16, 2027 at 5 p.m. in the applicant organization's local time; no required preliminary stage."
+    - "This announcement expires January 8, 2028."
+  tags:
+    - Biomedical AI
+    - Bioengineering
+    - Pilot research
+
+- id: nih-itcr-early-stage
+  title: Early-Stage Development of Informatics Technologies for Cancer Research and Management (RFA-CA-27-019)
+  provider: NIH — National Cancer Institute
+  type: Research cooperative agreement
+  summary: Supports development of informatics tools from prototypes through initial dissemination. Potential fits include AI methods developed with cancer researchers and end users.
+  eligibility: Public and private universities may apply. Projects require a clear cancer research need, novel informatics capability, user engagement, and development milestones.
+  amount: Up to $300,000 direct costs per year, excluding consortium F&A, for up to 3 years.
+  deadline: "2027-06-11"
+  status: Open
+  url: https://files.simpler.grants.gov/opportunities/c8944dab-96c4-4db9-ad50-9802ffc7228c/attachments/a5977f67-a9c8-464d-bcea-742db5c64257/RFA-CA-27-019-Full-Announcement.html
+  last_checked: "2026-10-24"
+  details:
+    - "U01 mechanism; clinical trials are optional."
+    - "New applications are due June 11, 2027 at 5 p.m. in the applicant organization's local time; another deadline is October 19, 2027."
+    - "No required preliminary stage; late applications are not accepted."
+    - "Funded foreign subawards or subcontracts are not permitted under this announcement."
+  tags:
+    - Biomedical AI
+    - Cancer informatics
+    - Research tools
+
+# Current amendment: https://files.simpler.grants.gov/opportunities/de479d2e-aad1-466a-acc3-d5d11cf7918d/attachments/fd9a4dfb-ac66-4c75-8166-592ea2daeb02/FA955026S0001_Amendment_0001_AFOSR_Open_BAA.pdf
+- id: dow-afosr-open-baa
+  title: Research Interests of the Air Force Office of Scientific Research — FA955026S0001
+  provider: DoW — Air Force Office of Scientific Research
+  type: Research funding
+  summary: Supports basic research with Air Force or Space Force relevance. Potential fits include control, scientific computing, physics-enhanced machine learning, optimization, and cybersecurity.
+  eligibility: Qualified academic organizations may apply, including U.S. universities. Research must fit a listed program and its topic-specific requirements.
+  amount: Typically $100,000–$300,000 annually; most awards last 3 years.
+  status: Rolling
+  url: https://simpler.grants.gov/opportunity/de479d2e-aad1-466a-acc3-d5d11cf7918d
+  last_checked: "2026-10-24"
+  details:
+    - "Amendment 0001; proposals are accepted continuously until superseded, with no fixed expiration date."
+    - "Relevant areas include dynamical systems and control, computational mathematics, mathematical optimization, dynamic data and information processing, and cybersecurity."
+    - "Discuss research fit with the appropriate program officer; submit proposals through Grants.gov."
+  tags:
+    - Physical AI
+    - Scientific machine learning
+    - Optimization
+    - Security
+
+# Current amendment: https://files.simpler.grants.gov/opportunities/5e185327-5f25-4c09-889a-43615e1f54da/attachments/3da7da00-4aaa-4ee0-b51f-f7b62c4008aa/DEVCOM_ARL_BAA_W911NF23S0001_Amendment_4_JAN_8_2025.pdf
+# Topic attachment: https://files.simpler.grants.gov/opportunities/5e185327-5f25-4c09-889a-43615e1f54da/attachments/e4621f8a-b19c-40ec-8c59-6611cc4fa276/Current_Research_Topics_for_DEVCOM_ARL_BAA_9_Dec2024.pdf
+- id: dow-arl-foundational-research
+  title: DEVCOM Army Research Laboratory BAA for Foundational Research — W911NF-23-S-0001
+  provider: DoW — Army Research Laboratory and Army Research Office
+  type: Research funding
+  summary: Supports foundational research addressing Army needs. Potential fits include learning and control, autonomous systems, computational science, and optimization.
+  eligibility: Institutions of higher education may apply. Additional eligibility conditions apply to specialized programs within the BAA.
+  deadline: "2027-11-20"
+  status: Rolling
+  url: https://simpler.grants.gov/opportunity/5e185327-5f25-4c09-889a-43615e1f54da
+  last_checked: "2026-10-24"
+  details:
+    - "Amendment 4; continuously open through November 20, 2027 unless otherwise announced. The displayed deadline is the announcement expiration."
+    - "White papers are strongly encouraged but are not required before submitting a full proposal."
+    - "Award size and duration depend on the research topic and available funding."
+  tags:
+    - Physical AI
+    - Autonomous systems
+    - Scientific machine learning
+    - Optimization
+
+# Joint-service amendment and Topic 3: https://files.simpler.grants.gov/opportunities/808c438e-f1f8-46ae-8cd3-6bf68320548a/attachments/38765476-658a-4e67-85f6-d07ed0325107/FY27_MURI_NOFO_N0001426SF002_Amendment1.pdf
+- id: dow-muri-fy2027-ai-scientific-discovery
+  title: "FY2027 MURI: Robustness to Novel Queries in AI for Scientific Discovery"
+  provider: DoW — Air Force Office of Scientific Research
+  type: Collaborative research grant
+  summary: Supports multidisciplinary basic research on AI reasoning and learning that remain reliable on novel scientific questions and out-of-distribution problems.
+  eligibility: U.S. universities offering science or engineering degrees may apply. Topic 3 normally supports no more than five funded faculty; exceptions must be discussed with the leading topic chief during the white-paper phase. There is no institutional proposal limit.
+  amount: Up to $1.5 million annually for 5 years, with a 3-year base and a 2-year option.
+  deadline: "2027-04-09"
+  status: Open
+  url: https://simpler.grants.gov/opportunity/808c438e-f1f8-46ae-8cd3-6bf68320548a
+  last_checked: "2026-10-24"
+  details:
+    - "Topic 3 uses AFOSR announcement NOFOAFRLAFOSR20260002 within the joint FY2027 MURI competition."
+    - "Optional white paper: November 20, 2026 at 5 p.m. Eastern."
+    - "Required full proposal: April 9, 2027 at 5 p.m. Eastern."
+    - "Industry, federal laboratories, FFRDCs, and foreign collaborators cannot receive MURI funds directly or through subawards."
+  tags:
+    - Scientific machine learning
+    - Trustworthy AI
+    - Optimization
+    - Multidisciplinary research
