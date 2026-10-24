@@ -15,11 +15,6 @@
     - "Proposals are accepted anytime. Recommended review-cycle targets are February 4, 2027 and September 9, 2027; these are not deadlines."
     - "Typical projects request approximately $150,000–$250,000 per year for 3–4 years."
     - "CPS and Robust Intelligence are programs within this solicitation."
-  tags:
-    - Physical AI
-    - Cyber-physical systems
-    - Artificial intelligence
-    - Optimization
 
 - id: nsf-foundational-research-robotics
   title: Foundational Research in Robotics (FRR) — PD 20-144Y
@@ -34,11 +29,6 @@
     - "Full proposals are accepted anytime."
     - "Discussion with an FRR program officer before submission is strongly encouraged; experimental validation on a physical platform is encouraged."
     - "Declined proposals require substantial revision and a minimum one-year interval from the original submission before resubmission."
-  tags:
-    - Physical AI
-    - Robotics
-    - Autonomous systems
-    - Sensing and control
 
 # Full solicitation: https://www.nsf.gov/funding/opportunities/nsf-satc-us-national-science-foundation-security-privacy-trust/nsf25-515/solicitation
 - id: nsf-satc-research
@@ -55,10 +45,6 @@
     - "Proposals are accepted anytime. Recommended review-cycle targets are January 25, 2027 and September 27, 2027; these are not deadlines."
     - "Projects exceeding $600,000 have additional collaboration and broadening-participation planning requirements as applicable."
     - "The overall 12-month individual limit is four SaTC proposals: two RES, one EDU, and one SEED."
-  tags:
-    - Trustworthy AI
-    - AI security
-    - Cyber-physical systems
 
 - id: nsf-eccs
   title: Electrical, Communications, and Computing Systems (ECCS) — NSF 26-514
@@ -73,11 +59,6 @@
     - "Proposals are accepted anytime; a letter of intent or preliminary proposal is not required."
     - "Budgets and durations should match the proposed scope; no fixed individual award cap is specified."
     - "Investigators are strongly encouraged to discuss fit with a program director and send a one-page project summary before submitting."
-  tags:
-    - Sensing and control
-    - Machine learning
-    - Optimization
-    - Energy systems
 
 - id: nsf-cmmi
   title: Civil, Mechanical, and Manufacturing Innovation (CMMI) — NSF 26-515
@@ -92,11 +73,6 @@
     - "Proposals are accepted anytime; a letter of intent or preliminary proposal is not required."
     - "Budgets and durations should match the proposed scope; no fixed individual award cap is specified."
     - "Investigators are strongly encouraged to discuss fit with a program director and send a one-page project summary before submitting."
-  tags:
-    - Physical AI
-    - Scientific machine learning
-    - Optimization and logistics
-    - Manufacturing
 
 # Full solicitation: https://www.nsf.gov/funding/opportunities/career-faculty-early-career-development-program/nsf22-586/solicitation
 - id: nsf-career
@@ -114,10 +90,6 @@
     - "Full proposals are due July 28, 2027 at 5 p.m. in the submitting institution's local time."
     - "Research and education activities must be integrated, and a departmental letter is required."
     - "Individual eligibility and prior competition history must be checked against the annual deadline."
-  tags:
-    - Early-career faculty
-    - Research and education
-    - Artificial intelligence
 
 # Arkansas eligibility: https://www.nsf.gov/funding/initiatives/epscor/epscor-criteria-eligibility
 # Full solicitation: https://www.nsf.gov/funding/opportunities/epscor-research-infrastructure-improvement-epscor-research/nsf24-528/solicitation
@@ -137,10 +109,6 @@
     - "The NSF track permits four proposals per institution and one per PI; coordinate institutional selection."
     - "PIs must be positioned to sustain home-institution research capacity beyond the fellowship, generally for at least three years."
     - "The host must be a U.S. research facility outside the PI's current institutional system. Supervisor, host-collaborator, and host-administrator support letters are required."
-  tags:
-    - EPSCoR
-    - Research partnerships
-    - Artificial intelligence
 
 # Full solicitation: https://www.nsf.gov/funding/opportunities/e-core-epscor-research-infrastructure-improvement-program-epscor/nsf25-523/solicitation
 # UArk AR-NETWORK subaward: https://news.uark.edu/articles/79893/ara-awards-u-of-a-1-8-million-to-expand-economic-development-efforts
@@ -161,10 +129,6 @@
     - "Full proposals are due July 20, 2027 at 5 p.m. in the submitting organization's local time."
     - "One lead submission or award per organization and one PI/co-PI role, subject to final-year and nonrenewal exceptions; PIs need at least a 50% eligible appointment. Coordinate any proposed lead role institutionally."
     - "Requires statewide partners, an active steering committee, and an S&T plan updated within five years. Notify the committee and coordinate with existing Arkansas awards; activities must not duplicate current funding."
-  tags:
-    - EPSCoR
-    - Research infrastructure
-    - Research partnerships
 
 # Full solicitation: https://www.nsf.gov/funding/opportunities/e-rise-epscor-research-infrastructure-improvement-program-epscor/nsf25-522/solicitation
 # UArk's existing E-RISE: https://news.uark.edu/articles/82580/industry-government-university-leaders-unite-to-shape-arkansas-transportation
@@ -184,10 +148,6 @@
     - "Full proposals are due August 10, 2027 at 5 p.m. in the submitting organization's local time."
     - "One lead submission per organization; existing E-RISE or RII Track-1 leads are restricted unless in their final year or a nonrenewing extension. PI/co-PI award limits also apply."
     - "Requires a statewide partnership, an active steering committee with current bylaws, an approved S&T plan from the past five years, and notification to that committee. Coordinate with existing Arkansas awards."
-  tags:
-    - EPSCoR
-    - Research partnerships
-    - Artificial intelligence
 
 # NIH new-application dates: https://grants.nih.gov/grants-process/submit/submission-policies/standard-due-dates
 - id: nih-parent-r01
@@ -206,10 +166,6 @@
     - "New applications are due February 5, 2027 at 5 p.m. in the applicant organization's local time; no required preliminary stage."
     - "Later new-application dates follow the official recurring schedule; this announcement expires January 8, 2028."
     - "Funded foreign subawards or subcontracts are not permitted under this announcement."
-  tags:
-    - Biomedical AI
-    - Imaging and sensing
-    - Scientific machine learning
 
 - id: nih-parent-r21
   title: NIH Exploratory/Developmental Research Project Grant — Parent R21 (PA-25-304)
@@ -227,10 +183,6 @@
     - "New applications are due February 16, 2027 at 5 p.m. in the applicant organization's local time; no required preliminary stage."
     - "This announcement expires January 8, 2028."
     - "Funded foreign subawards or subcontracts are not permitted under this announcement."
-  tags:
-    - Biomedical AI
-    - Pilot research
-    - Imaging and sensing
 
 - id: nih-nlm-bioinformatics
   title: Advancing Bioinformatics, Translational Bioinformatics and Computational Biology Research (PAR-26-040)
@@ -248,10 +200,6 @@
     - "New applications are due February 5, 2027 at 5 p.m. in the applicant organization's local time; no required preliminary stage."
     - "This announcement expires March 6, 2029."
     - "Funded foreign subawards or subcontracts are not permitted under this announcement."
-  tags:
-    - Biomedical AI
-    - Bioinformatics
-    - Scientific machine learning
 
 - id: nih-bioengineering-exploratory
   title: Exploratory/Developmental Bioengineering Research Grants (PAR-25-346)
@@ -268,10 +216,6 @@
     - "R21 mechanism; clinical trials are not allowed."
     - "New applications are due February 16, 2027 at 5 p.m. in the applicant organization's local time; no required preliminary stage."
     - "This announcement expires January 8, 2028."
-  tags:
-    - Biomedical AI
-    - Bioengineering
-    - Pilot research
 
 - id: nih-itcr-early-stage
   title: Early-Stage Development of Informatics Technologies for Cancer Research and Management (RFA-CA-27-019)
@@ -289,10 +233,6 @@
     - "New applications are due June 11, 2027 at 5 p.m. in the applicant organization's local time; another deadline is October 19, 2027."
     - "No required preliminary stage; late applications are not accepted."
     - "Funded foreign subawards or subcontracts are not permitted under this announcement."
-  tags:
-    - Biomedical AI
-    - Cancer informatics
-    - Research tools
 
 # Current amendment: https://files.simpler.grants.gov/opportunities/de479d2e-aad1-466a-acc3-d5d11cf7918d/attachments/fd9a4dfb-ac66-4c75-8166-592ea2daeb02/FA955026S0001_Amendment_0001_AFOSR_Open_BAA.pdf
 - id: dow-afosr-open-baa
@@ -309,11 +249,6 @@
     - "Amendment 0001; proposals are accepted continuously until superseded, with no fixed expiration date."
     - "Relevant areas include dynamical systems and control, computational mathematics, mathematical optimization, dynamic data and information processing, and cybersecurity."
     - "Discuss research fit with the appropriate program officer; submit proposals through Grants.gov."
-  tags:
-    - Physical AI
-    - Scientific machine learning
-    - Optimization
-    - Security
 
 # Current amendment: https://files.simpler.grants.gov/opportunities/5e185327-5f25-4c09-889a-43615e1f54da/attachments/3da7da00-4aaa-4ee0-b51f-f7b62c4008aa/DEVCOM_ARL_BAA_W911NF23S0001_Amendment_4_JAN_8_2025.pdf
 # Topic attachment: https://files.simpler.grants.gov/opportunities/5e185327-5f25-4c09-889a-43615e1f54da/attachments/e4621f8a-b19c-40ec-8c59-6611cc4fa276/Current_Research_Topics_for_DEVCOM_ARL_BAA_9_Dec2024.pdf
@@ -331,11 +266,6 @@
     - "Amendment 4; continuously open through November 20, 2027 unless otherwise announced. The displayed deadline is the announcement expiration."
     - "White papers are strongly encouraged but are not required before submitting a full proposal."
     - "Award size and duration depend on the research topic and available funding."
-  tags:
-    - Physical AI
-    - Autonomous systems
-    - Scientific machine learning
-    - Optimization
 
 # Joint-service amendment and Topic 3: https://files.simpler.grants.gov/opportunities/808c438e-f1f8-46ae-8cd3-6bf68320548a/attachments/38765476-658a-4e67-85f6-d07ed0325107/FY27_MURI_NOFO_N0001426SF002_Amendment1.pdf
 - id: dow-muri-fy2027-ai-scientific-discovery
@@ -354,8 +284,3 @@
     - "Optional white paper: November 20, 2026 at 5 p.m. Eastern."
     - "Required full proposal: April 9, 2027 at 5 p.m. Eastern."
     - "Industry, federal laboratories, FFRDCs, and foreign collaborators cannot receive MURI funds directly or through subawards."
-  tags:
-    - Scientific machine learning
-    - Trustworthy AI
-    - Optimization
-    - Multidisciplinary research

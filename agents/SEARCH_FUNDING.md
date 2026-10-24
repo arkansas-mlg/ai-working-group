@@ -70,7 +70,7 @@ In research-only mode, return a sourced table with title/number, fit, eligibilit
 
 In add mode:
 
-- Add only verified, relevant candidates using the YAML contract and deadline rules in UPDATE_FUNDING.md. Retain the order and IDs of existing real entries where practical.
+- Add only verified, relevant candidates using only the fields documented in the YAML contract and following the deadline rules in UPDATE_FUNDING.md. Retain the order and IDs of existing real entries where practical.
 - Use the current official opportunity or solicitation URL. Include a solicitation number in `title` or `details` when available.
 - Omit `sample` from real entries; do not add `sample: false`.
 - Once at least one real opportunity is ready to add, remove the clearly illustrative `sample: true` funding entries and the obsolete illustrative-only header comment. Do not convert fictional examples into real opportunities while retaining their unrelated IDs.

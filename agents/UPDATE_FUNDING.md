@@ -68,13 +68,12 @@ Conditional and optional fields:
 | --- | --- |
 | `amount` | Include when verified. State cap/minimum/typical amount, duration, and direct/total costs as applicable. |
 | `deadline` | Quoted `"YYYY-MM-DD"` hard cutoff, interpreted below. Omit when not applicable or not established. Never use free text, a target date, or a guessed renewal date. |
-| `tags` | Optional list of a few useful topics, such as `Physical AI`, `Scientific machine learning`, or `EPSCoR`. Use `DEPSCoR` and `IDeA` accurately. |
 | `details` | Optional list of plain-text strings for application stages, exact times/time zones, rolling targets, opening dates, solicitation number, or important conditions. This field is already rendered for funding. |
 | `link_label` | Optional short label such as `Official solicitation`; the site defaults to `View details`. |
 
 **Omit `sample` entirely from real entries.** Do not add `sample: false`. The marker exists only for illustrative data; it is not required for publication.
 
-Use normal YAML quoting or block scalars for text containing colons or other special characters. Omit unavailable optional fields rather than adding empty strings or nulls. Do not introduce new schema fields such as `sources`, `next_deadline`, or `confidence`. Extra supporting source URLs can be recorded in YAML comments beside the entry and in the final report. Text fields render as plain content, so do not embed Markdown links or HTML in them.
+Use normal YAML quoting or block scalars for text containing colons or other special characters. Omit unavailable optional fields rather than adding empty strings or nulls. Use only the fields documented in the tables above; do not introduce fields such as `sources`, `next_deadline`, or `confidence`. Extra supporting source URLs can be recorded in YAML comments beside the entry and in the final report. Text fields render as plain content, so do not embed Markdown links or HTML in them.
 
 ## Deadline and status rules
 

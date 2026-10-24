@@ -44,7 +44,7 @@ Edit files in `content/`, then rebuild. Most content changes do not require edit
 
 Page headings are optional: omit `title` from `about.yaml` or a page under `site.yaml` → `pages` to hide its large heading. The browser tab still uses a default page name.
 
-An opportunity can start with a small entry:
+A compute opportunity can start with a small entry:
 
 ```yaml
 - id: example-research-credits
@@ -62,7 +62,8 @@ Additional fields used by the initial content include:
 
 - **People:** `role`, `department`, `email`, `bio`, `interests`, and `initials`.
 - **Events:** `type`, `summary`, `date`, `time`, `location`, `status`, and `tags`.
-- **Compute and funding:** `provider`, `type`, `summary`, `eligibility`, `deadline`, `status`, and `tags`. Compute can include `access` and `details`; funding can include `amount`.
+- **Compute:** `provider`, `type`, `summary`, `eligibility`, `deadline`, `status`, `tags`, `access`, and `details`.
+- **Funding:** `provider`, `type`, `summary`, `eligibility`, `deadline`, `status`, `amount`, and `details`.
 
 Add `url` for a profile or opportunity link. Schedule, compute, and funding listings can use `link_label` for its display text and `last_checked` to show when the listing was verified. Supported links are HTTPS, HTTP, email, and local site paths.
 
