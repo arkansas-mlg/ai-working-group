@@ -76,6 +76,18 @@ python scripts/build.py --exclude-samples
 
 Navigation labels and paths are in `site.yaml`. Use paths such as `people/` relative to the site root so the build can add the GitHub Pages base path. Changing navigation does not create a new page route; adding a new section requires a corresponding template and build route.
 
+## Funding agent workflows
+
+Use [agents/SEARCH_FUNDING.md](agents/SEARCH_FUNDING.md) to discover NSF, NIH, and DoW opportunities, including Arkansas EPSCoR, DEPSCoR, and NIH IDeA options. It defaults to research-only; explicitly request adding verified opportunities to populate `content/funding.yaml`.
+
+Use [agents/UPDATE_FUNDING.md](agents/UPDATE_FUNDING.md) to refresh existing real listings, including deadlines, status, official URLs, eligibility, and funding amounts. Both workflows require current official sources and omit `sample` from real entries. These Markdown instructions are run by an agent; they do not schedule updates themselves.
+
+```text
+Follow agents/SEARCH_FUNDING.md in research-only mode.
+Follow agents/SEARCH_FUNDING.md and add verified opportunities to content/funding.yaml.
+Follow agents/UPDATE_FUNDING.md to refresh existing listings in content/funding.yaml.
+```
+
 ## Validate and publish
 
 ```sh
