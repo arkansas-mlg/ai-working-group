@@ -42,10 +42,10 @@ pages:
     intro: Research exchanges, workshops, and conversations bring our community together. Explore upcoming activities and revisit past events.
   compute:
     eyebrow: Research resources
-    intro: Explore computing access, research allocations, and cloud credits that can help move an idea toward an experiment.
+    intro: Explore computing access, research allocations, and cloud credits that can help move an idea toward an experiment. This information is maintained by AI agents.
   funding:
     eyebrow: Support the next step
-    intro: Discover opportunities to develop collaborations, test research concepts, and support shared ambitions across disciplines.
+    intro: Discover opportunities to develop collaborations, test research concepts, and support shared ambitions across disciplines. This information is maintained by AI agents.
 home:
   themes_eyebrow: Two connected directions
   themes_title: Intelligence grounded in the physical world.
