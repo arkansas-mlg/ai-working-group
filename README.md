@@ -54,15 +54,13 @@ A compute opportunity can start with a small entry:
   type: Cloud credits
   status: Planned
   sample: true
-  tags:
-    - GPUs
 ```
 
 Additional fields used by the initial content include:
 
 - **People:** `role`, `department`, `email`, `bio`, `interests`, and `initials`.
 - **Events:** `type`, `summary`, `date`, `time`, `location`, `status`, and `tags`.
-- **Compute:** `provider`, `type`, `summary`, `eligibility`, `deadline`, `status`, `tags`, `access`, and `details`.
+- **Compute:** `provider`, `type`, `summary`, `eligibility`, `deadline`, `status`, `access`, and `details`.
 - **Funding:** `provider`, `type`, `summary`, `eligibility`, `deadline`, `status`, `amount`, and `details`.
 
 Add `url` for a profile or opportunity link. Schedule, compute, and funding listings can use `link_label` for its display text and `last_checked` to show when the listing was verified. Supported links are HTTPS, HTTP, email, and local site paths.
@@ -76,6 +74,19 @@ python scripts/build.py --exclude-samples
 ```
 
 Navigation labels and paths are in `site.yaml`. Use paths such as `people/` relative to the site root so the build can add the GitHub Pages base path. Changing navigation does not create a new page route; adding a new section requires a corresponding template and build route.
+
+## Compute agent workflows
+
+Use [agents/SEARCH_COMPUTE.md](agents/SEARCH_COMPUTE.md) to discover academic HPC/GPU allocations, cloud research credits, model/API research access, campus or regional resources, and computing partnerships. It defaults to research-only; explicitly request adding verified resources to populate `content/compute.yaml`.
+
+Use [agents/UPDATE_COMPUTE.md](agents/UPDATE_COMPUTE.md) to refresh existing real listings, including availability, deadlines, official URLs, eligibility, allocations or credits, and access requirements. Both workflows require current official evidence and omit `sample` and `tags` from real entries. Application deadlines are separate from the period recipients have to use their credits or allocations. These Markdown instructions are run by an agent; they do not schedule updates themselves.
+
+```text
+Follow agents/SEARCH_COMPUTE.md in research-only mode.
+Follow agents/SEARCH_COMPUTE.md and add verified opportunities to content/compute.yaml.
+Follow agents/UPDATE_COMPUTE.md in research-only mode.
+Follow agents/UPDATE_COMPUTE.md to refresh existing listings in content/compute.yaml.
+```
 
 ## Funding agent workflows
 
