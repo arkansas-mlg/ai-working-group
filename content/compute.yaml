@@ -1,22 +1,43 @@
+# Account eligibility and sponsorship: https://hpc.uark.edu/hpc-support/user-account-requests/
+# Resource selection: https://hpcwiki.uark.edu/doku.php?id=resource_selection
+# User obligations: https://hpc.uark.edu/hpc-support/user-policy.php
+# Purchased priority access: https://hpc.uark.edu/hpc-resources/ahpcc_priority.php
 - id: uark-ahpcc
   title: Arkansas High Performance Computing Center (AHPCC)
   provider: University of Arkansas
   type: Campus computing
-  summary: High-performance computing, storage, technical support, and training for computational and data-intensive research.
-  eligibility: Faculty, staff, and students at Arkansas public universities, and their collaborators.
-  access: Request a user account through the AHPCC website.
+  summary: Shared CPU and GPU computing, storage, technical support, and training for computational and data-intensive research.
+  eligibility: Faculty, staff, and students at Arkansas higher-education institutions may request accounts. Students and external collaborators need sponsorship from an eligible Arkansas faculty member.
+  access: Follow the official account-request instructions and email HPC support with institutional affiliation, research description, and sponsor information when required. Most services are free to eligible researchers; purchased condo nodes provide priority access.
+  status: Rolling
   url: https://hpc.uark.edu/
+  last_checked: "2026-10-25"
   link_label: Visit AHPCC
+  details:
+    - "Student and collaborator sponsors must be faculty at a University of Arkansas System institution, Arkansas State University, Southern Arkansas University, or Arkansas Tech University."
+    - "Shared GPU partitions support suitable GPU workloads; multi-GPU nodes require effective multi-GPU use. Queue availability and partition runtime limits apply."
+    - "Accounts are disabled after six months without access; course accounts are disabled when the course ends. These are account-use conditions, not application deadlines."
+    - "Users must acknowledge AHPCC support, report research outcomes annually when requested, and back up critical data."
 
+# Eligibility, duration, and allocation conditions: https://allocations.access-ci.org/allocations-policy
+# Credit limits and submission routes: https://allocations.access-ci.org/project-types
+# Student and resource access: https://access-ci.org/get-started/for-graduate-students/
 - id: nsf-access
   title: ACCESS Research Computing
   provider: U.S. National Science Foundation (NSF)
   type: Research allocations
   summary: No-cost allocations for advanced computing, GPU, cloud, and storage resources to support research and education.
-  eligibility: U.S.-based researchers and educators at eligible institutions; graduate students may lead Explore or Discover projects with advisor guidance.
-  access: Register for an ACCESS ID and request an allocation matched to your project's computing needs.
-  url: https://access-ci.org/
+  eligibility: U.S.-based researchers and educators affiliated with eligible institutions may lead projects. Graduate students may lead Explore or Discover projects with an advisor as co-PI; undergraduates join an eligible advisor's project. Users need an institutional email matching their affiliation and must meet research-security restrictions.
+  access: Register for an ACCESS ID and submit a project request. No-cost Explore, Discover, and Accelerate awards have total limits of 400,000, 1,500,000, and 3,000,000 ACCESS Credits, respectively; initially up to half is awarded, with the remainder requiring a progress report and supplement request.
+  status: Rolling
+  url: https://allocations.access-ci.org/get-your-first-project
+  last_checked: "2026-10-25"
   link_label: Visit ACCESS
+  details:
+    - "Explore, Discover, and Accelerate requests are accepted continuously. Maximize requests use separate semiannual application rounds; this listing's rolling status does not make those rounds continuously open."
+    - "ACCESS Credits are accounting units, not dollars or GPU hours. Exchange them for specific resource allocations; provider approval, resource suitability, and availability determine CPU, GPU, cloud, or storage access."
+    - "Unfunded credit-based projects receive 12-month allocations with extensions possible within program limits; funded projects can follow their supporting grant period. Unused units are forfeited when an allocation ends."
+    - "Work must support open scholarly dissemination. Progress reports are required for credit supplements and Maximize renewals; every completed project requires a final report. Publications must acknowledge ACCESS and resource providers. Collaborators affiliated with non-U.S. institutions need additional justification and approval."
 
 - id: google-cloud-research-credits
   title: Google Cloud Research Credits
@@ -28,22 +49,237 @@
   url: https://edu.google.com/programs/credits/research/
   link_label: View Google Cloud program
 
+# Eligibility: https://aws.amazon.com/government-education/research-and-technical-computing/cloud-credit-for-research/faqs/
+# Application and Free plan restriction: https://pages.awscloud.com/aws-cloud-credit-for-research.html
+# Credit terms, updated September 24, 2026: https://aws.amazon.com/awscredits/
 - id: aws-cloud-credit-for-research
   title: AWS Cloud Credit for Research
   provider: Amazon Web Services (AWS)
   type: Cloud credits
-  summary: AWS promotional credits for public research tools, cloud proof-of-concept and benchmark studies, and community training in cloud-based research.
-  eligibility: Full-time faculty or research staff, and graduate or postgraduate students, at accredited research institutions.
-  access: Apply online with a research proposal and estimated AWS service usage; applications are reviewed throughout the year.
+  summary: Promotional credits for finite projects developing public research tools, evaluating research workloads or open data on AWS, or delivering community research training. General lab funding and ongoing research operations are excluded.
+  eligibility: Full-time faculty or research staff, and graduate or postgraduate students, at accredited research institutions may apply using an institution-issued email address. An AWS account is required; accounts on the Free plan are ineligible for promotional credits.
+  access: Apply online with a defined project, service-cost estimate, and plan for sharing outcomes. Student awards are capped at $5,000; faculty and staff amounts depend on the proposal without a published cap. Research credits expire one year after receipt of the code or deposit into the account, whichever occurs first.
+  status: Rolling
   url: https://aws.amazon.com/government-education/research-and-technical-computing/cloud-credit-for-research/
+  last_checked: "2026-10-25"
   link_label: View AWS program
+  details:
+    - "Applications are accepted throughout the year. Award amounts may be below the amount requested."
+    - "Published redemption instructions require a valid credit card. Overages and charges for ineligible services remain payable."
+    - "Research-supported EC2 usage is limited to On-Demand and Spot instances. Credits do not establish GPU quota or guaranteed capacity."
+    - "Unless specifically authorized, exclusions include Marketplace, Mechanical Turk, certain support plans, professional services, training, certification, domain registration, and upfront Savings Plan or Reserved Instance fees. Credits do not cover taxes."
+    - "Credits must support the approved research project. For a project benefiting a public institution, AWS support and the credit amount must be disclosed to that institution in writing."
+    - "Terms restrict disclosure of AWS service information; public disclosures about the promotional credit require AWS's prior written consent."
 
+# Current expansion: https://snorkel.ai/blog/frontier-ai-is-accelerating-open-benchmarks-need-to-keep-up/
+# Application: https://benchmarks.snorkel.ai/apply/
+# In-kind support and open-output terms: https://benchmarks.snorkel.ai/terms/
 - id: snorkel-open-benchmarks-grants
   title: Snorkel Open Benchmarks Grants
   provider: Snorkel AI
   type: Compute & research support
   summary: Support for developing open AI benchmarks, including compute credits, hosting, expert data, and research and engineering assistance.
-  eligibility: Researchers, domain experts, and open-source teams developing open benchmarks or new evaluation methods.
-  access: Submit a benchmark proposal through the program website; proposals are accepted on a rolling basis.
+  eligibility: Researchers, domain experts, and open-source teams developing open benchmarks or evaluation methods may apply. Participants must have any necessary institutional approvals and rights to release project outputs under a permissive open-source or open-data license.
+  access: Submit a benchmark proposal through the program website; acceptances are rolling. Selected teams receive in-kind support that may include partner compute and platform credits, hosting, expert data, and research or engineering collaboration. No cash funding is provided.
   url: https://benchmarks.snorkel.ai/
   link_label: View Snorkel program
+  details:
+    - "The announced $30 million is a program-wide commitment, not an individual compute award. No uniform per-project credit quantity or usage period is published."
+    - "Compute and platform benefits depend on the selected partner support; confirm the awarded services, expiration, and any partner billing conditions before use."
+    - "Participants retain ownership of their research artifacts but must release program outputs openly and acknowledge Snorkel's support or contributions as appropriate."
+    - "Credits and service hours are nontransferable and have no cash value. Snorkel may end participation at any time; unused credits then expire."
+
+# Eligibility and cost: https://nrp.ai/
+# Usage and GPU quota rules: https://nrp.ai/documentation/userdocs/start/policies/
+# Data restrictions and acknowledgments: https://nrp.ai/NRP-AUP.pdf
+- id: nrp-nautilus
+  title: National Research Platform — Nautilus
+  provider: National Research Platform
+  type: Research computing
+  summary: Shared GPU and CPU computing, storage, and hosted research services for AI and scientific workloads. Supports containerized experiments, model training, and interactive notebooks.
+  eligibility: Researchers at U.S. nonprofit research and educational institutions may request access. Faculty, staff, and postdoctoral researchers can request a project group; students join through their research supervisor.
+  access: No-cost shared resources, subject to approval, fair-use policies, and availability. Sign in through the institutional identity service and request a project namespace or join an existing group; there is no guaranteed allocation size.
+  status: Rolling
+  url: https://nrp.ai/documentation/userdocs/start/getting-started/
+  last_checked: "2026-10-25"
+  details:
+    - "Project and account requests are ongoing; no fixed application cutoff is published."
+    - "A100 GPU quota defaults to zero and requires a separate request. Runtime and utilization limits apply, and access does not guarantee capacity."
+    - "For noncommercial research and education. Protected data, including HIPAA, PII, CUI, and FERPA data, is not permitted."
+    - "Research outputs must acknowledge NRP. Storage is for active computation rather than archival retention."
+
+# Cost and applicant conditions: https://www.amd.com/en/developer/resources/cloud-access.html
+# Terms: https://www.amd.com/content/dam/amd/en/documents/legal/hpc-research-cluster-terms-of-use.pdf
+- id: amd-ai-hpc-cluster
+  title: AMD University Program AI & HPC Cluster
+  provider: AMD
+  type: Research allocations
+  summary: Remote CPU and GPU computing for open-source AI and high-performance computing research or education. Potential uses include scientific machine learning and computational engineering.
+  eligibility: Academic and nonprofit research institutions may propose noncommercial projects. AMD University Program enrollment and project approval are required; an authorized institutional representative must accept the terms. Export-control and restricted-user conditions apply.
+  access: Apply through the AMD University Program for a no-cost allocation measured in node-hours on AMD EPYC and Instinct systems. Allocations are competitive, project-specific, and last up to one year.
+  status: Rolling
+  url: https://www.amd.com/en/corporate/university-program/ai-hpc-cluster.html
+  last_checked: "2026-10-25"
+  details:
+    - "Applications are reviewed quarterly. The next review window ends November 15, 2026, with decisions December 15 and allocations beginning January 1, 2027; later applications enter the following window. This is not a program-closing deadline."
+    - "Access ends when awarded node-hours are consumed or the allocation period ends, whichever comes first."
+    - "Use is limited to the approved project. Terms prohibit storing PII or protected health information, UAV or military-system development, and public analyses of AMD hardware or software features or performance."
+    - "Published terms prohibit access by permanent residents of Iran, North Korea, Syria, or Cuba, and restricted end users."
+    - "Patent analysis and certain patent-development activities are restricted. Users must notify AMD of related publications, complete an annual survey, and provide their own backups and necessary third-party software licenses."
+
+# Quota, costs, and requirements: https://sites.research.google/trc/faq/
+# Billing setup: https://docs.cloud.google.com/tpu/docs/setup-gcp-account
+- id: google-tpu-research-cloud
+  title: TPU Research Cloud
+  provider: Google Research
+  type: Research allocations
+  summary: Cloud TPU access for open machine learning research, including model training with supported frameworks such as JAX, PyTorch, and TensorFlow.
+  eligibility: Researchers and students may express interest; Google approves applicants individually. Participants are expected to share research outcomes publicly, provide feedback, and follow the program's terms and AI principles.
+  access: Submit the interest form linked from the program page. Approved participants receive temporary, no-charge Cloud TPU quota for a Google Cloud project; individual quantities and duration are not fixed publicly.
+  status: Rolling
+  url: https://sites.research.google/trc/about/
+  last_checked: "2026-10-25"
+  details:
+    - "Invitations are issued on a rolling basis; no application cutoff is published."
+    - "A Google Cloud project with billing enabled is required. Other cloud services, including supporting virtual machines and storage, remain chargeable; this is not unrestricted cloud credit."
+    - "TRC quota is not compatible with Vertex-based workflows according to the program FAQ."
+    - "Participants are expected to share supported research through publications, open-source code, or other public outputs and provide detailed feedback to Google."
+
+# Eligibility and review cycle: https://help.openai.com/en/articles/10139500-researcher-access-program-faq
+# Billing: https://help.openai.com/en/articles/8264644-setting-up-and-managing-prepaid-api-billing
+# Publication: https://openai.com/policies/sharing-publication-policy/
+- id: openai-researcher-access
+  title: OpenAI Researcher Access Program
+  provider: OpenAI
+  type: API credits
+  summary: API credits for research on responsible AI deployment, robustness, interpretability, alignment, fairness, misuse, and societal impacts. Potential fits include trustworthy AI and model evaluation.
+  eligibility: Researchers affiliated with academic institutions or other research organizations in API-supported countries may apply. U.S. university researchers are eligible; selection depends on research fit.
+  access: Submit a research proposal through the program's application portal for up to $1,000 in API credits, usable for one year after award. Applications are accepted throughout the year.
+  status: Rolling
+  url: https://grants.openai.com/prog/openai_researcher_access_program/
+  last_checked: "2026-10-25"
+  details:
+    - "Applications are reviewed in March, June, September, and December; these are review cycles rather than application deadlines."
+    - "Credits support publicly available API models, cannot be extended, and cannot be transferred to another institution or account."
+    - "Usage and sharing/publication policies apply. Safety or security findings should follow coordinated vulnerability disclosure."
+    - "Free/Explore-tier accounts need a valid payment method for rate-limit increases. Paid billing or automatic recharges can incur charges beyond the grant; prepaid cutoffs may be delayed."
+
+# Credit expiration: https://www.anthropic.com/legal/credit-terms
+# Billing: https://support.claude.com/en/articles/8977456-how-do-i-pay-for-my-claude-api-usage
+# U.S. availability: https://platform.claude.com/docs/en/api/supported-regions
+- id: anthropic-external-researcher-access
+  title: Anthropic External Researcher Access Program
+  provider: Anthropic
+  type: API credits
+  summary: Claude API credits for selected AI safety and alignment research. Potential fits include trustworthy AI, model evaluation, and alignment methods.
+  eligibility: Researchers pursuing AI safety and alignment topics prioritized by Anthropic, located where its API is available. U.S. university research groups may apply.
+  access: Apply through the program page with team and research details for $1,000 in Claude API credits. Groups can apply using one Claude Console organization; applications are evaluated on the first Monday of each month.
+  status: Rolling
+  url: https://support.claude.com/en/articles/9125743-what-is-the-external-researcher-access-program
+  last_checked: "2026-10-25"
+  details:
+    - "Credits cover the standard API model suite, not the Claude web app, nonpublic models, or fine-tuning."
+    - "Promotional credits expire as specified when issued, or after one calendar year if no date is specified; credits cannot be transferred."
+    - "Usage policies remain in force, including for red-teaming research; approval does not provide an exemption."
+    - "Prepaid API access stops when credits run out unless more are added. Optional auto-reload purchases credits; invoiced organizations can be billed for additional usage."
+
+# Current application: https://docs.google.com/forms/d/e/1FAIpQLSfwDGfVg2lHJ0cc0oF_ilEnjvr_r4_paYi7VLlr5cLNXASdvA/viewform
+# Program rules: https://www.anthropic.com/ai-for-science-program-rules
+# Credit expiration: https://www.anthropic.com/legal/credit-terms
+# Billing: https://support.claude.com/en/articles/8977456-how-do-i-pay-for-my-claude-api-usage
+- id: anthropic-ai-for-science
+  title: Anthropic AI for Science Program
+  provider: Anthropic
+  type: Model and API credits
+  summary: Claude credits to accelerate high-impact scientific research across scientific fields. Potential fits include AI for scientific discovery, natural sciences, and mathematical research.
+  eligibility: Academic and nonprofit researchers proposing scientific work that AI can meaningfully accelerate may apply. Applicants need institutional consent and must satisfy program rules and biosecurity review; engineering proposals should explain their scientific contribution.
+  access: Submit scientific credentials and a research proposal using the application linked from the program announcement. Selected projects receive up to $50,000 in Claude credits assigned to the organization identified in the application.
+  status: Rolling
+  url: https://www.anthropic.com/news/expanding-support-for-scientists
+  last_checked: "2026-10-25"
+  details:
+    - "Applications are evaluated monthly. The current application welcomes natural-science and mathematics projects."
+    - "Credits apply to the offering specified by the award and expire as stated when issued, or after one calendar year if no expiry is specified."
+    - "Standard usage policies apply. The August 2026 expansion announcement limits biology and chemistry work to Opus-class models."
+    - "Recipients participate in research surveys and interviews; Anthropic may analyze transcripts and publish anonymized, aggregated findings."
+    - "Prepaid API usage requires additional credits after exhaustion. Optional auto-reload and invoiced accounts can create charges beyond the award."
+
+# No-cost access without a proposal/allocation: https://osg-htc.org/
+# Account application: https://portal.osg-htc.org/application
+# Onboarding: https://portal.osg-htc.org/documentation/overview/account_setup/registration-and-login/
+# Data and storage policies: https://portal.osg-htc.org/documentation/overview/references/policy/
+# Acknowledgments: https://osg-htc.org/acknowledging
+- id: osg-ospool
+  title: Open Science Pool (OSPool)
+  provider: OSG Consortium
+  type: Research access
+  summary: Distributed CPU and GPU computing for many independent research jobs. Potential fits include parameter sweeps, model optimization, and separate AI training runs.
+  eligibility: Researchers affiliated with U.S. academic institutions may request access. OSG-operated access points also serve U.S. government and nonprofit research projects.
+  access: No-cost, fair-share computing without a proposal or fixed allocation. Submit the OSG Portal interest form, discuss the workload in a short facilitator orientation, and register for the assigned access point when instructed.
+  status: Rolling
+  url: https://osg-htc.org/services/ospool/
+  last_checked: "2026-10-25"
+  details:
+    - "Capacity is predominantly opportunistic, and jobs can be interrupted. Individual jobs should finish or checkpoint within 20 hours."
+    - "GPU access depends on available matching resources. Account approval does not reserve GPU hours or guarantee a particular job's completion time."
+    - "Proprietary data, HIPAA data, and other privacy-sensitive data must not be stored or processed on OSG-managed resources. Storage is temporary and is not backed up."
+    - "Publications should acknowledge OSG and cite its specified resources."
+
+# PI eligibility: https://chameleoncloud.readthedocs.io/en/latest/user/pi_eligibility.html
+# Project allocations: https://chameleoncloud.readthedocs.io/en/latest/getting-started/
+# NSF confirms no-cost Chameleon and CloudLab access in Section II.B:
+# https://www.nsf.gov/funding/opportunities/circ-community-infrastructure-research-computer-information/nsf23-589/solicitation
+- id: chameleon-cloud
+  title: Chameleon
+  provider: Chameleon — National Science Foundation
+  type: Research allocations
+  summary: Reconfigurable bare-metal and virtual cloud resources, including GPUs, for computer science systems research, education, and emerging applications.
+  eligibility: U.S. academic faculty and research staff in supervisory positions may request PI status. Students normally join an eligible supervisor's project. Projects must support open academic computer science research.
+  access: Apply for PI eligibility and a project through the Chameleon portal. Approved projects receive a no-cost startup allocation of 20,000 service units for six months; renewals and additional units may be requested.
+  status: Rolling
+  url: https://chameleoncloud.org/learn/frequently-asked-questions/
+  last_checked: "2026-10-25"
+  details:
+    - "GPU resources require reservations and are scarce. Service units are accounting units, not GPU hours; resource types consume different rates."
+    - "Bare-metal and GPU virtual-machine leases normally last at most seven days. Extensions depend on availability; longer exceptions require review."
+    - "Research is expected to produce open publications, acknowledge Chameleon and NSF, and comply with the prohibition on commercial use."
+
+# Resource routes: https://docs.alcf.anl.gov/
+# No-cost nonproprietary research: https://science.osti.gov/User-Facilities/Frequently-Asked-Questions
+# Accounts: https://docs.alcf.anl.gov/account-project-management/accounts-and-access/
+# Data policy: https://docs.alcf.anl.gov/policies/data-and-software-policies/data-policy/
+# Publications: https://docs.alcf.anl.gov/policies/alcf-acknowledgement-policy/
+- id: alcf-directors-discretionary
+  title: ALCF Director's Discretionary Allocation Program
+  provider: Argonne Leadership Computing Facility — U.S. Department of Energy
+  type: Research allocations
+  summary: Startup access to leadership computing and AI accelerators for preparing scientific applications for larger allocations or evaluating AI testbed systems.
+  eligibility: University researchers may apply; DOE sponsorship is not required. Projects must demonstrate a need for leadership-class resources.
+  access: Submit a Director's Discretionary request through the program page. Awards are generally small, project-dependent allocations lasting three to six months, with renewals possible. Nonproprietary research intended for publication is provided without user fees.
+  status: Rolling
+  url: https://www.alcf.anl.gov/science/directors-discretionary-allocation-program
+  last_checked: "2026-10-25"
+  details:
+    - "Requests can include CPU systems, GPU systems, inference endpoints, or AI testbed resources. The approved systems and allocation determine access."
+    - "An allocation is followed by individual account requests and sponsorship; approval does not provide unrestricted access to every system."
+    - "Sensitive or national-security data require documented PI and ALCF leadership approval. Export-controlled software is prohibited."
+    - "Publications and presentations should acknowledge ALCF, and accepted citations should be reported. AI Testbed users are asked to share paper drafts with ALCF before submission for feedback."
+
+# Project eligibility: https://docs.cloudlab.us/users.html
+# Acceptable use: https://cloudlab.us/aup
+# Hardware and reservations: https://docs.cloudlab.us/hardware.html
+# https://docs.cloudlab.us/reservations.html
+- id: cloudlab
+  title: CloudLab
+  provider: CloudLab — National Science Foundation
+  type: Research access
+  summary: Bare-metal infrastructure, including GPU-equipped nodes, for experiments on cloud architectures, distributed systems, networking, and applications requiring unusual infrastructure control.
+  eligibility: Faculty and senior research staff can lead projects subject to staff approval; students join a faculty-led project. Use must meet CloudLab's research or education requirements.
+  access: No-cost experimental research access. Request a project through the CloudLab signup process, then request suitable nodes or reservations. Resource quantity and duration depend on availability and approved requests.
+  status: Rolling
+  url: https://www.cloudlab.us/
+  last_checked: "2026-10-25"
+  details:
+    - "Systems experiments must advance cloud capabilities or understanding and require infrastructure access, isolation, or specialized capabilities unavailable in traditional clouds. Applications must depend on CloudLab capabilities not generally available elsewhere."
+    - "GPU-equipped hardware exists, but project approval does not guarantee GPU availability; reservations may require administrative review."
+    - "Commercial use and attacks on CloudLab infrastructure are prohibited. Do not store or transmit data protected by privacy regulations."
